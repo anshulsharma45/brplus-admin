@@ -1,0 +1,117 @@
+.br-logo {
+  height: 35px;
+}
+
+.card-heading {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.heading-orange {
+  color: #ffa801 !important;
+}
+
+.heading-blue {
+  color: #3699ff !important;
+}
+
+.heading-red {
+  color: ;
+}
+
+.heading-new-offer {
+}
+
+.halfFont {
+  font-size: 0.75em;
+  align-content: flex-end;
+  align-self: flex-end;
+  margin: auto;
+  flex: auto;
+  text-align: -webkit-right;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.symbol.symbol-50 > img {
+  display: none !important;
+}
+.symbol.symbol-50 .symbol-label {
+  display: none !important;
+}
+
+table.dataTable thead > tr > th.sorting_asc,
+table.dataTable thead > tr > th.sorting_desc,
+table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+  padding-right: 20px !important;
+}
+
+.table.table-head-custom thead tr,
+.table.table-head-custom thead th {
+  font-size: 0.85em !important;
+}
+
+.table-email span {
+  font-size: 0.9em !important;
+}
+
+.table.table-separate th,
+.table.table-separate td {
+  font-size: 0.8em !important;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexDisplay {
+  display: flex;
+}
+
+.flexPlaceEnd {
+  place-content: flex-end;
+}
+
+.accordion .card .card-header .card-title {
+  font-size: 1em !important;
+}
+
+.content {
+  padding: 0px !important;
+}
+
+.footer {
+  margin-top: 3em;
+}
+
+.svg-icon-xl-23,
+.svg-icon-xl-23 svg {
+  height: 5em !important;
+  width: 5em !important;
+}
+
+.orders .container {
+  padding: 0px !important;
+}
+
+.orders .card.card-custom > .card-body {
+  padding: 1em !important;
+}
+
+.orders table.dataTable thead > tr > th.sorting_asc,
+table.dataTable thead > tr > th.sorting_desc,
+table.dataTable thead > tr > th.sorting,
+table.dataTable thead > tr > td.sorting_asc,
+table.dataTable thead > tr > td.sorting_desc,
+table.dataTable thead > tr > td.sorting {
+  padding-right: 0px !important;
+}
+
+.renewal-customer span {
+  font-size: 0.85em !important;
+}

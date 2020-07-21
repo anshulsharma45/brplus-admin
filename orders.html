@@ -1,0 +1,4010 @@
+<!DOCTYPE html>
+<!--
+Template Name: Metronic - Bootstrap 4 HTML, React, Angular 9 & VueJS Admin Dashboard Theme
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: https://1.envato.market/EA4JP
+Renew Support: https://1.envato.market/EA4JP
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en">
+  <!--begin::Head-->
+  <head>
+    <base href="" />
+    <meta charset="utf-8" />
+    <title>Users | BodyRock Plus</title>
+    <meta name="description" content="Pagination options datatables examples" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--begin::Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+    />
+    <!--end::Fonts-->
+    <!--begin::Page Vendors Styles(used by this page)-->
+    <link
+      href="assets/plugins/custom/datatables/datatables.bundle.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!--end::Page Vendors Styles-->
+    <!--begin::Global Theme Styles(used by all pages)-->
+    <link
+      href="assets/plugins/global/plugins.bundle.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/style.bundle.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--end::Global Theme Styles-->
+    <!--begin::Layout Themes(used by all pages)-->
+    <link
+      href="assets/css/themes/layout/header/base/light.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/themes/layout/header/menu/light.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/themes/layout/brand/dark.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/css/themes/layout/aside/dark.css?v=7.0.5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--end::Layout Themes-->
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+  </head>
+  <!--end::Head-->
+  <!--begin::Body-->
+  <body
+    id="kt_body"
+    class="orders users header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading"
+  >
+    <!--begin::Main-->
+    <!--begin::Header Mobile-->
+    <div
+      id="kt_header_mobile"
+      class="header-mobile align-items-center header-mobile-fixed"
+    >
+      <!--begin::Logo-->
+      <a href="index.html">
+        <img alt="Logo" src="assets/media/logos/logo-light.png" />
+      </a>
+      <!--end::Logo-->
+      <!--begin::Toolbar-->
+      <div class="d-flex align-items-center">
+        <!--begin::Aside Mobile Toggle-->
+        <button
+          class="btn p-0 burger-icon burger-icon-left"
+          id="kt_aside_mobile_toggle"
+        >
+          <span></span>
+        </button>
+        <!--end::Aside Mobile Toggle-->
+        <!--begin::Header Menu Mobile Toggle-->
+        <button class="btn p-0 burger-icon ml-4" id="kt_header_mobile_toggle">
+          <span></span>
+        </button>
+        <!--end::Header Menu Mobile Toggle-->
+        <!--begin::Topbar Mobile Toggle-->
+        <button
+          class="btn btn-hover-text-primary p-0 ml-2"
+          id="kt_header_mobile_topbar_toggle"
+        >
+          <span class="svg-icon svg-icon-xl">
+            <!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24px"
+              height="24px"
+              viewBox="0 0 24 24"
+              version="1.1"
+            >
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <polygon points="0 0 24 0 24 24 0 24" />
+                <path
+                  d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                  opacity="0.3"
+                />
+                <path
+                  d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z"
+                  fill="#000000"
+                  fill-rule="nonzero"
+                />
+              </g>
+            </svg>
+            <!--end::Svg Icon-->
+          </span>
+        </button>
+        <!--end::Topbar Mobile Toggle-->
+      </div>
+      <!--end::Toolbar-->
+    </div>
+    <!--end::Header Mobile-->
+    <div class="d-flex flex-column flex-root">
+      <!--begin::Page-->
+      <div class="d-flex flex-row flex-column-fluid page">
+        <!--begin::Aside-->
+        <div
+          class="aside aside-left aside-fixed d-flex flex-column flex-row-auto"
+          id="kt_aside"
+        >
+          <!--begin::Brand-->
+          <div class="brand flex-column-auto" id="kt_brand">
+            <!--begin::Logo-->
+            <a href="index.html" class="brand-logo">
+              <img
+                alt="Logo"
+                src="assets/new/BodyRock-logo-new.svg"
+                class="br-logo"
+              />
+            </a>
+            <!--end::Logo-->
+            <!--begin::Toggle-->
+            <button class="brand-toggle btn btn-sm px-0" id="kt_aside_toggle">
+              <span class="svg-icon svg-icon svg-icon-xl">
+                <!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Angle-double-left.svg-->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  version="1.1"
+                >
+                  <g
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <polygon points="0 0 24 0 24 24 0 24" />
+                    <path
+                      d="M5.29288961,6.70710318 C4.90236532,6.31657888 4.90236532,5.68341391 5.29288961,5.29288961 C5.68341391,4.90236532 6.31657888,4.90236532 6.70710318,5.29288961 L12.7071032,11.2928896 C13.0856821,11.6714686 13.0989277,12.281055 12.7371505,12.675721 L7.23715054,18.675721 C6.86395813,19.08284 6.23139076,19.1103429 5.82427177,18.7371505 C5.41715278,18.3639581 5.38964985,17.7313908 5.76284226,17.3242718 L10.6158586,12.0300721 L5.29288961,6.70710318 Z"
+                      fill="#000000"
+                      fill-rule="nonzero"
+                      transform="translate(8.999997, 11.999999) scale(-1, 1) translate(-8.999997, -11.999999)"
+                    />
+                    <path
+                      d="M10.7071009,15.7071068 C10.3165766,16.0976311 9.68341162,16.0976311 9.29288733,15.7071068 C8.90236304,15.3165825 8.90236304,14.6834175 9.29288733,14.2928932 L15.2928873,8.29289322 C15.6714663,7.91431428 16.2810527,7.90106866 16.6757187,8.26284586 L22.6757187,13.7628459 C23.0828377,14.1360383 23.1103407,14.7686056 22.7371482,15.1757246 C22.3639558,15.5828436 21.7313885,15.6103465 21.3242695,15.2371541 L16.0300699,10.3841378 L10.7071009,15.7071068 Z"
+                      fill="#000000"
+                      fill-rule="nonzero"
+                      opacity="0.3"
+                      transform="translate(15.999997, 11.999999) scale(-1, 1) rotate(-270.000000) translate(-15.999997, -11.999999)"
+                    />
+                  </g>
+                </svg>
+                <!--end::Svg Icon-->
+              </span>
+            </button>
+            <!--end::Toolbar-->
+          </div>
+          <!--end::Brand-->
+          <!--begin::Aside Menu-->
+          <div
+            class="aside-menu-wrapper flex-column-fluid"
+            id="kt_aside_menu_wrapper"
+          >
+            <!--begin::Menu Container-->
+            <div
+              id="kt_aside_menu"
+              class="aside-menu my-4"
+              data-menu-vertical="1"
+              data-menu-scroll="1"
+              data-menu-dropdown-timeout="500"
+            >
+              <!--begin::Menu Nav-->
+              <!--begin::Menu Nav-->
+              <ul class="menu-nav">
+                <li class="menu-item menu-item-active" aria-haspopup="true">
+                  <a href="index.html" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                      <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                      >
+                        <g
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <polygon points="0 0 24 0 24 24 0 24" />
+                          <path
+                            d="M12.9336061,16.072447 L19.36,10.9564761 L19.5181585,10.8312381 C20.1676248,10.3169571 20.2772143,9.3735535 19.7629333,8.72408713 C19.6917232,8.63415859 19.6104327,8.55269514 19.5206557,8.48129411 L12.9336854,3.24257445 C12.3871201,2.80788259 11.6128799,2.80788259 11.0663146,3.24257445 L4.47482784,8.48488609 C3.82645598,9.00054628 3.71887192,9.94418071 4.23453211,10.5925526 C4.30500305,10.6811601 4.38527899,10.7615046 4.47382636,10.8320511 L4.63,10.9564761 L11.0659024,16.0730648 C11.6126744,16.5077525 12.3871218,16.5074963 12.9336061,16.072447 Z"
+                            fill="#000000"
+                            fill-rule="nonzero"
+                          />
+                          <path
+                            d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z"
+                            fill="#000000"
+                            opacity="0.3"
+                          />
+                        </g>
+                      </svg>
+                      <!--end::Svg Icon-->
+                    </span>
+                    <span class="menu-text">Dashboard</span>
+                  </a>
+                </li>
+                <li class="menu-section">
+                  <h4 class="menu-text">Custom</h4>
+                  <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
+                </li>
+
+                <li class="menu-item" aria-haspopup="true">
+                  <a href="users.html" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                      <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
+                      <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-07-07-181510/theme/html/demo1/dist/../src/media/svg/icons/Communication/Group.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <polygon points="0 0 24 0 24 24 0 24" />
+                            <path
+                              d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                              fill="#000000"
+                              fill-rule="nonzero"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                              fill="#000000"
+                              fill-rule="nonzero"
+                            />
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon--></span
+                      >
+                      <!--end::Svg Icon-->
+                    </span>
+                    <span class="menu-text">Users</span>
+                  </a>
+                </li>
+                <li class="menu-item" aria-haspopup="true">
+                  <a href="orders.html" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                      <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
+                      <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Credit-card.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              x="2"
+                              y="5"
+                              width="20"
+                              height="14"
+                              rx="2"
+                            />
+                            <rect
+                              fill="#000000"
+                              x="2"
+                              y="8"
+                              width="20"
+                              height="3"
+                            />
+                            <rect
+                              fill="#000000"
+                              opacity="0.3"
+                              x="16"
+                              y="14"
+                              width="4"
+                              height="2"
+                              rx="1"
+                            />
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon--></span
+                      >
+                      <!--end::Svg Icon-->
+                    </span>
+                    <span class="menu-text">Orders</span>
+                  </a>
+                </li>
+                <li class="menu-item" aria-haspopup="true">
+                  <a href="promos.html" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                      <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
+                      <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Sale2.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <polygon
+                              fill="#000000"
+                              opacity="0.3"
+                              points="12 20.0218549 8.47346039 21.7286168 6.86905972 18.1543453 3.07048824 17.1949849 4.13894342 13.4256452 1.84573388 10.2490577 5.08710286 8.04836581 5.3722735 4.14091196 9.2698837 4.53859595 12 1.72861679 14.7301163 4.53859595 18.6277265 4.14091196 18.9128971 8.04836581 22.1542661 10.2490577 19.8610566 13.4256452 20.9295118 17.1949849 17.1309403 18.1543453 15.5265396 21.7286168"
+                            />
+                            <polygon
+                              fill="#000000"
+                              points="14.0890818 8.60255815 8.36079737 14.7014391 9.70868621 16.049328 15.4369707 9.950447"
+                            />
+                            <path
+                              d="M10.8543431,9.1753866 C10.8543431,10.1252593 10.085524,10.8938719 9.13585777,10.8938719 C8.18793881,10.8938719 7.41737243,10.1252593 7.41737243,9.1753866 C7.41737243,8.22551387 8.18793881,7.45690126 9.13585777,7.45690126 C10.085524,7.45690126 10.8543431,8.22551387 10.8543431,9.1753866"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M14.8641422,16.6221564 C13.9162233,16.6221564 13.1456569,15.8535438 13.1456569,14.9036711 C13.1456569,13.9520555 13.9162233,13.1851857 14.8641422,13.1851857 C15.8138085,13.1851857 16.5826276,13.9520555 16.5826276,14.9036711 C16.5826276,15.8535438 15.8138085,16.6221564 14.8641422,16.6221564 Z"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon--></span
+                      >
+                      <!--end::Svg Icon-->
+                    </span>
+                    <span class="menu-text">Promotions</span>
+                  </a>
+                </li>
+                <li class="menu-item" aria-haspopup="true">
+                  <a href="member-pricing.html" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                      <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
+                      <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-07-07-181510/theme/html/demo1/dist/../src/media/svg/icons/Shopping/Cart2.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <path
+                              d="M12,4.56204994 L7.76822128,9.6401844 C7.4146572,10.0644613 6.7840925,10.1217854 6.3598156,9.76822128 C5.9355387,9.4146572 5.87821464,8.7840925 6.23177872,8.3598156 L11.2317787,2.3598156 C11.6315738,1.88006147 12.3684262,1.88006147 12.7682213,2.3598156 L17.7682213,8.3598156 C18.1217854,8.7840925 18.0644613,9.4146572 17.6401844,9.76822128 C17.2159075,10.1217854 16.5853428,10.0644613 16.2317787,9.6401844 L12,4.56204994 Z"
+                              fill="#000000"
+                              fill-rule="nonzero"
+                              opacity="0.3"
+                            />
+                            <path
+                              d="M3.28077641,9 L20.7192236,9 C21.2715083,9 21.7192236,9.44771525 21.7192236,10 C21.7192236,10.0817618 21.7091962,10.163215 21.6893661,10.2425356 L19.5680983,18.7276069 C19.234223,20.0631079 18.0342737,21 16.6576708,21 L7.34232922,21 C5.96572629,21 4.76577697,20.0631079 4.43190172,18.7276069 L2.31063391,10.2425356 C2.17668518,9.70674072 2.50244587,9.16380623 3.03824078,9.0298575 C3.11756139,9.01002735 3.1990146,9 3.28077641,9 Z M12,12 C11.4477153,12 11,12.4477153 11,13 L11,17 C11,17.5522847 11.4477153,18 12,18 C12.5522847,18 13,17.5522847 13,17 L13,13 C13,12.4477153 12.5522847,12 12,12 Z M6.96472382,12.1362967 C6.43125772,12.2792385 6.11467523,12.8275755 6.25761704,13.3610416 L7.29289322,17.2247449 C7.43583503,17.758211 7.98417199,18.0747935 8.51763809,17.9318517 C9.05110419,17.7889098 9.36768668,17.2405729 9.22474487,16.7071068 L8.18946869,12.8434035 C8.04652688,12.3099374 7.49818992,11.9933549 6.96472382,12.1362967 Z M17.0352762,12.1362967 C16.5018101,11.9933549 15.9534731,12.3099374 15.8105313,12.8434035 L14.7752551,16.7071068 C14.6323133,17.2405729 14.9488958,17.7889098 15.4823619,17.9318517 C16.015828,18.0747935 16.564165,17.758211 16.7071068,17.2247449 L17.742383,13.3610416 C17.8853248,12.8275755 17.5687423,12.2792385 17.0352762,12.1362967 Z"
+                              fill="#000000"
+                            />
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon--></span
+                      >
+
+                      <!--end::Svg Icon-->
+                    </span>
+                    <span class="menu-text">Member Pricing</span>
+                  </a>
+                </li>
+                <!-- <li class="menu-item" aria-haspopup="true">
+          <a href="#" class="menu-link">
+            <span class="svg-icon menu-icon">
+              <span class="svg-icon svg-icon-primary svg-icon-2x">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                  viewBox="0 0 24 24" version="1.1">
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect x="0" y="0" width="24" height="24" />
+                    <path
+                      d="M4,6 L20,6 C20.5522847,6 21,6.44771525 21,7 L21,8 C21,8.55228475 20.5522847,9 20,9 L4,9 C3.44771525,9 3,8.55228475 3,8 L3,7 C3,6.44771525 3.44771525,6 4,6 Z M5,11 L10,11 C10.5522847,11 11,11.4477153 11,12 L11,19 C11,19.5522847 10.5522847,20 10,20 L5,20 C4.44771525,20 4,19.5522847 4,19 L4,12 C4,11.4477153 4.44771525,11 5,11 Z M14,11 L19,11 C19.5522847,11 20,11.4477153 20,12 L20,19 C20,19.5522847 19.5522847,20 19,20 L14,20 C13.4477153,20 13,19.5522847 13,19 L13,12 C13,11.4477153 13.4477153,11 14,11 Z"
+                      fill="#000000" />
+                    <path
+                      d="M14.4452998,2.16794971 C14.9048285,1.86159725 15.5256978,1.98577112 15.8320503,2.4452998 C16.1384028,2.90482849 16.0142289,3.52569784 15.5547002,3.83205029 L12,6.20185043 L8.4452998,3.83205029 C7.98577112,3.52569784 7.86159725,2.90482849 8.16794971,2.4452998 C8.47430216,1.98577112 9.09517151,1.86159725 9.5547002,2.16794971 L12,3.79814957 L14.4452998,2.16794971 Z"
+                      fill="#000000" fill-rule="nonzero" opacity="0.3" />
+                  </g>
+                </svg>
+              </span>
+              </span>
+            </span>
+            <span class="menu-text">Product Add-Ons</span>
+          </a>
+        </li> -->
+                <li class="menu-item" aria-haspopup="true">
+                  <a href="upsells.html" class="menu-link">
+                    <span class="svg-icon menu-icon">
+                      <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
+                      <span class="svg-icon svg-icon-primary svg-icon-2x">
+                        <!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2020-07-07-181510/theme/html/demo1/dist/../src/media/svg/icons/Shopping/Sort1.svg--><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          width="24px"
+                          height="24px"
+                          viewBox="0 0 24 24"
+                          version="1.1"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <rect x="0" y="0" width="24" height="24" />
+                            <rect
+                              fill="#000000"
+                              x="4"
+                              y="5"
+                              width="16"
+                              height="3"
+                              rx="1.5"
+                            />
+                            <path
+                              d="M7.5,11 L16.5,11 C17.3284271,11 18,11.6715729 18,12.5 C18,13.3284271 17.3284271,14 16.5,14 L7.5,14 C6.67157288,14 6,13.3284271 6,12.5 C6,11.6715729 6.67157288,11 7.5,11 Z M10.5,17 L13.5,17 C14.3284271,17 15,17.6715729 15,18.5 C15,19.3284271 14.3284271,20 13.5,20 L10.5,20 C9.67157288,20 9,19.3284271 9,18.5 C9,17.6715729 9.67157288,17 10.5,17 Z"
+                              fill="#000000"
+                              opacity="0.3"
+                            />
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon--></span
+                      >
+
+                      <!--end::Svg Icon-->
+                    </span>
+                    <span class="menu-text">Upsells</span>
+                  </a>
+                </li>
+              </ul>
+              <!--end::Menu Nav-->
+              <!--end::Menu Nav-->
+            </div>
+            <!--end::Menu Container-->
+          </div>
+          <!--end::Aside Menu-->
+        </div>
+        <!--end::Aside-->
+        <!--begin::Wrapper-->
+        <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+          <!--begin::Header-->
+          <div id="kt_header" class="header header-fixed">
+            <!--begin::Container-->
+            <div
+              class="container-fluid d-flex align-items-stretch justify-content-between"
+            >
+              <!--begin::Info-->
+              <div class="d-flex align-items-center flex-wrap mr-2">
+                <!--begin::Page Title-->
+                <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">
+                  BodyRock+ Subscriptions Dashboard
+                </h5>
+                <!--end::Page Title-->
+                <!--begin::Actions-->
+                <div
+                  class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"
+                ></div>
+                <!--end::Actions-->
+              </div>
+              <!--end::Info-->
+              <!--begin::Header Menu Wrapper-->
+              <div
+                class="header-menu-wrapper header-menu-wrapper-left"
+                id="kt_header_menu_wrapper"
+              ></div>
+              <!--end::Header Menu Wrapper-->
+              <!--begin::Topbar-->
+              <div class="topbar">
+                <!--end::Chat-->
+                <!--begin::Languages-->
+                <div class="dropdown">
+                  <!--begin::Toggle-->
+
+                  <!--end::Toggle-->
+                </div>
+                <!--end::Languages-->
+                <!--begin::User-->
+                <div class="topbar-item">
+                  <div
+                    class="btn btn-icon w-auto btn-clean d-flex align-items-center btn-lg px-2"
+                    id="kt_quick_user_toggle"
+                  >
+                    <span
+                      class="text-muted font-weight-bold font-size-base d-none d-md-inline mr-1"
+                      >Hi,</span
+                    >
+                    <span
+                      class="text-dark-50 font-weight-bolder font-size-base d-none d-md-inline mr-3"
+                      >BodyRock Admin</span
+                    >
+                  </div>
+                </div>
+                <!--end::User-->
+              </div>
+              <!--end::Topbar-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Header-->
+          <!--begin::Content-->
+          <div
+            class="content d-flex flex-column flex-column-fluid"
+            id="kt_content"
+          >
+            <!--begin::Entry-->
+            <div class="d-flex flex-column-fluid">
+              <!--begin::Container-->
+              <div class="container" style="padding: 0 10px !important;">
+                <!--begin::Card-->
+                <div class="card card-custom gutter-b">
+                  <div class="card-header card-header-tabs-line">
+                    <div class="card-toolbar justify-content-center">
+                      <ul class="nav nav-tabs nav-bold nav-tabs-line">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            data-toggle="tab"
+                            href="#kt_tab_pane_1_4"
+                          >
+                            <span class="nav-icon"
+                              ><span
+                                class="svg-icon svg-icon-primary svg-icon-2x"
+                              >
+                                <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Shopping\Dollar.svg--><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="24px"
+                                  height="24px"
+                                  viewBox="0 0 24 24"
+                                  version="1.1"
+                                >
+                                  <g
+                                    stroke="none"
+                                    stroke-width="1"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  >
+                                    <rect x="0" y="0" width="24" height="24" />
+                                    <rect
+                                      fill="#000000"
+                                      opacity="0.3"
+                                      x="11.5"
+                                      y="2"
+                                      width="2"
+                                      height="4"
+                                      rx="1"
+                                    />
+                                    <rect
+                                      fill="#000000"
+                                      opacity="0.3"
+                                      x="11.5"
+                                      y="16"
+                                      width="2"
+                                      height="5"
+                                      rx="1"
+                                    />
+                                    <path
+                                      d="M15.493,8.044 C15.2143319,7.68933156 14.8501689,7.40750104 14.4005,7.1985 C13.9508311,6.98949895 13.5170021,6.885 13.099,6.885 C12.8836656,6.885 12.6651678,6.90399981 12.4435,6.942 C12.2218322,6.98000019 12.0223342,7.05283279 11.845,7.1605 C11.6676658,7.2681672 11.5188339,7.40749914 11.3985,7.5785 C11.2781661,7.74950085 11.218,7.96799867 11.218,8.234 C11.218,8.46200114 11.2654995,8.65199924 11.3605,8.804 C11.4555005,8.95600076 11.5948324,9.08899943 11.7785,9.203 C11.9621676,9.31700057 12.1806654,9.42149952 12.434,9.5165 C12.6873346,9.61150047 12.9723317,9.70966616 13.289,9.811 C13.7450023,9.96300076 14.2199975,10.1308324 14.714,10.3145 C15.2080025,10.4981676 15.6576646,10.7419985 16.063,11.046 C16.4683354,11.3500015 16.8039987,11.7268311 17.07,12.1765 C17.3360013,12.6261689 17.469,13.1866633 17.469,13.858 C17.469,14.6306705 17.3265014,15.2988305 17.0415,15.8625 C16.7564986,16.4261695 16.3733357,16.8916648 15.892,17.259 C15.4106643,17.6263352 14.8596698,17.8986658 14.239,18.076 C13.6183302,18.2533342 12.97867,18.342 12.32,18.342 C11.3573285,18.342 10.4263378,18.1741683 9.527,17.8385 C8.62766217,17.5028317 7.88033631,17.0246698 7.285,16.404 L9.413,14.238 C9.74233498,14.6433354 10.176164,14.9821653 10.7145,15.2545 C11.252836,15.5268347 11.7879973,15.663 12.32,15.663 C12.5606679,15.663 12.7949989,15.6376669 13.023,15.587 C13.2510011,15.5363331 13.4504991,15.4540006 13.6215,15.34 C13.7925009,15.2259994 13.9286662,15.0740009 14.03,14.884 C14.1313338,14.693999 14.182,14.4660013 14.182,14.2 C14.182,13.9466654 14.1186673,13.7313342 13.992,13.554 C13.8653327,13.3766658 13.6848345,13.2151674 13.4505,13.0695 C13.2161655,12.9238326 12.9248351,12.7908339 12.5765,12.6705 C12.2281649,12.5501661 11.8323355,12.420334 11.389,12.281 C10.9583312,12.141666 10.5371687,11.9770009 10.1255,11.787 C9.71383127,11.596999 9.34650161,11.3531682 9.0235,11.0555 C8.70049838,10.7578318 8.44083431,10.3968355 8.2445,9.9725 C8.04816568,9.54816454 7.95,9.03200304 7.95,8.424 C7.95,7.67666293 8.10199848,7.03700266 8.406,6.505 C8.71000152,5.97299734 9.10899753,5.53600171 9.603,5.194 C10.0970025,4.85199829 10.6543302,4.60183412 11.275,4.4435 C11.8956698,4.28516587 12.5226635,4.206 13.156,4.206 C13.9160038,4.206 14.6918294,4.34533194 15.4835,4.624 C16.2751706,4.90266806 16.9686637,5.31433061 17.564,5.859 L15.493,8.044 Z"
+                                      fill="#000000"
+                                    />
+                                  </g>
+                                </svg>
+                                <!--end::Svg Icon--></span
+                              ></span
+                            >
+                            <span class="nav-text">Recent Orders</span>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-toggle="tab"
+                            href="#kt_tab_pane_2_4"
+                          >
+                            <span class="nav-icon"
+                              ><span
+                                class="svg-icon svg-icon-primary svg-icon-2x"
+                              >
+                                <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Code\Time-schedule.svg--><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="24px"
+                                  height="24px"
+                                  viewBox="0 0 24 24"
+                                  version="1.1"
+                                >
+                                  <g
+                                    stroke="none"
+                                    stroke-width="1"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  >
+                                    <rect x="0" y="0" width="24" height="24" />
+                                    <path
+                                      d="M10.9630156,7.5 L11.0475062,7.5 C11.3043819,7.5 11.5194647,7.69464724 11.5450248,7.95024814 L12,12.5 L15.2480695,14.3560397 C15.403857,14.4450611 15.5,14.6107328 15.5,14.7901613 L15.5,15 C15.5,15.2109164 15.3290185,15.3818979 15.1181021,15.3818979 C15.0841582,15.3818979 15.0503659,15.3773725 15.0176181,15.3684413 L10.3986612,14.1087258 C10.1672824,14.0456225 10.0132986,13.8271186 10.0316926,13.5879956 L10.4644883,7.96165175 C10.4845267,7.70115317 10.7017474,7.5 10.9630156,7.5 Z"
+                                      fill="#000000"
+                                    />
+                                    <path
+                                      d="M7.38979581,2.8349582 C8.65216735,2.29743306 10.0413491,2 11.5,2 C17.2989899,2 22,6.70101013 22,12.5 C22,18.2989899 17.2989899,23 11.5,23 C5.70101013,23 1,18.2989899 1,12.5 C1,11.5151324 1.13559454,10.5619345 1.38913364,9.65805651 L3.31481075,10.1982117 C3.10672013,10.940064 3,11.7119264 3,12.5 C3,17.1944204 6.80557963,21 11.5,21 C16.1944204,21 20,17.1944204 20,12.5 C20,7.80557963 16.1944204,4 11.5,4 C10.54876,4 9.62236069,4.15592757 8.74872191,4.45446326 L9.93948308,5.87355717 C10.0088058,5.95617272 10.0495583,6.05898805 10.05566,6.16666224 C10.0712834,6.4423623 9.86044965,6.67852665 9.5847496,6.69415008 L4.71777931,6.96995273 C4.66931162,6.97269931 4.62070229,6.96837279 4.57348157,6.95710938 C4.30487471,6.89303938 4.13906482,6.62335149 4.20313482,6.35474463 L5.33163823,1.62361064 C5.35654118,1.51920756 5.41437908,1.4255891 5.49660017,1.35659741 C5.7081375,1.17909652 6.0235153,1.2066885 6.2010162,1.41822583 L7.38979581,2.8349582 Z"
+                                      fill="#000000"
+                                      opacity="0.3"
+                                    />
+                                  </g>
+                                </svg>
+                                <!--end::Svg Icon--></span
+                              ></span
+                            >
+                            <span class="nav-text" style="margin-left: 5px;"
+                              >Renewals</span
+                            >
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            data-toggle="tab"
+                            href="#kt_tab_pane_3_4"
+                          >
+                            <span class="nav-icon"
+                              ><span
+                                class="svg-icon svg-icon-primary svg-icon-2x"
+                              >
+                                <!--begin::Svg Icon | path:C:\wamp64\www\keenthemes\themes\metronic\theme\html\demo1\dist/../src/media/svg/icons\Code\Error-circle.svg--><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                                  width="24px"
+                                  height="24px"
+                                  viewBox="0 0 24 24"
+                                  version="1.1"
+                                >
+                                  <g
+                                    stroke="none"
+                                    stroke-width="1"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                  >
+                                    <rect x="0" y="0" width="24" height="24" />
+                                    <circle
+                                      fill="#000000"
+                                      opacity="0.3"
+                                      cx="12"
+                                      cy="12"
+                                      r="10"
+                                    />
+                                    <path
+                                      d="M12.0355339,10.6213203 L14.863961,7.79289322 C15.2544853,7.40236893 15.8876503,7.40236893 16.2781746,7.79289322 C16.6686989,8.18341751 16.6686989,8.81658249 16.2781746,9.20710678 L13.4497475,12.0355339 L16.2781746,14.863961 C16.6686989,15.2544853 16.6686989,15.8876503 16.2781746,16.2781746 C15.8876503,16.6686989 15.2544853,16.6686989 14.863961,16.2781746 L12.0355339,13.4497475 L9.20710678,16.2781746 C8.81658249,16.6686989 8.18341751,16.6686989 7.79289322,16.2781746 C7.40236893,15.8876503 7.40236893,15.2544853 7.79289322,14.863961 L10.6213203,12.0355339 L7.79289322,9.20710678 C7.40236893,8.81658249 7.40236893,8.18341751 7.79289322,7.79289322 C8.18341751,7.40236893 8.81658249,7.40236893 9.20710678,7.79289322 L12.0355339,10.6213203 Z"
+                                      fill="#000000"
+                                    />
+                                  </g>
+                                </svg>
+                                <!--end::Svg Icon--></span
+                              ></span
+                            >
+                            <span class="nav-text" style="margin-left: 5px;"
+                              >Errors</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="kt_tab_pane_1_4"
+                        role="tabpanel"
+                        aria-labelledby="kt_tab_pane_1_4"
+                      >
+                        <div class="d-flex flex-column-fluid">
+                          <!--begin::Container-->
+                          <div class="container">
+                            <!--begin::Card-->
+                            <div class="card card-custom">
+                              <div class="card-header flex-wrap py-5">
+                                <div class="card-title">
+                                  <h3 class="card-label">
+                                    Recent Orders
+                                  </h3>
+                                </div>
+                                <div class="card-toolbar">
+                                  <!--end::Dropdown-->
+                                  <!--begin::Button-->
+                                  <a
+                                    href="#"
+                                    class="btn btn-primary font-weight-bolder"
+                                  >
+                                    <span class="svg-icon svg-icon-md">
+                                      <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Flatten.svg-->
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="24px"
+                                        height="24px"
+                                        viewBox="0 0 24 24"
+                                        version="1.1"
+                                      >
+                                        <g
+                                          stroke="none"
+                                          stroke-width="1"
+                                          fill="none"
+                                          fill-rule="evenodd"
+                                        >
+                                          <polygon
+                                            points="0 0 24 0 24 24 0 24"
+                                          ></polygon>
+                                          <path
+                                            d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                            fill="#000000"
+                                            fill-rule="nonzero"
+                                            opacity="0.3"
+                                          ></path>
+                                          <path
+                                            d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                            fill="#000000"
+                                            fill-rule="nonzero"
+                                          ></path>
+                                        </g>
+                                      </svg>
+                                      <!--end::Svg Icon--> </span
+                                    >Add New User</a
+                                  >
+                                  <!--end::Button-->
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <!--begin: Datatable-->
+                                <table
+                                  class="table table-separate table-head-custom table-checkable"
+                                  id="kt_datatable"
+                                >
+                                  <thead>
+                                    <tr>
+                                      <!-- <th>Record ID</th> -->
+                                      <th>Order</th>
+                                      <th>Promo</th>
+                                      <th>Full Name</th>
+                                      <th>Time of Charge</th>
+                                      <th>Email</th>
+                                      <th>Trx Total</th>
+                                      <th>Type</th>
+                                      <th>Actions</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <!-- <td>1</td> -->
+                                      <td>#50419460</td>
+                                      <td>
+                                        Free BR+ 90 Day + Nutrition Bundle
+                                      </td>
+                                      <td>São Félix do Xingu</td>
+                                      <td>July 18, 2020:11:23:45</td>
+                                      <td class="table-email">
+                                        <span>humbertb@gmail.com</span>
+                                      </td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>3</td> -->
+                                      <td>#50418482</td>
+                                      <td>
+                                        Free BR+ 90 Day + Nutrition Bundle 45
+                                      </td>
+                                      <td>Jareb Labro</td>
+                                      <td>July 18, 2020:01:10:45</td>
+                                      <td class="table-email">
+                                        <span>dalekerman@gmail.com</span>
+                                      </td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>1</td> -->
+                                      <td>#50419460</td>
+                                      <td>
+                                        Free BR+ 90 Day + Nutrition Bundle 23
+                                      </td>
+                                      <td>São Félix do Xingu</td>
+                                      <td>July 18, 2020:07:30:14</td>
+                                      <td class="table-email">
+                                        <span>humbertb@gmail.com</span>
+                                      </td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <!-- <td>5</td> -->
+                                      <td>#50406220</td>
+                                      <td>$15 off for 1 month BR+</td>
+                                      <td>Shawnee Mission<br /></td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td class="table-email">
+                                        <span>dalek@gmail.com</span>
+                                      </td>
+                                      <td>$4.99</td>
+                                      <td>3</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <!-- <td>6</td> -->
+                                      <td>#50400519</td>
+                                      <td>$15 off for 1 month BR+</td>
+                                      <td>Paul Dancer</td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td class="table-email">
+                                        <span> pauldjancer@gmail.com</span>
+                                      </td>
+
+                                      <td>$4.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <!-- <td>7</td> -->
+                                      <td>#50392359</td>
+                                      <td>$15 off for 1 month BR+</td>
+                                      <td>Ashley Jones</td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td class="table-email">
+                                        <span> ash.dani.j@outlook.com</span>
+                                      </td>
+
+                                      <td>$4.99</td>
+                                      <td>1</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>8</td> -->
+                                      <td>#50391578</td>
+                                      <td>90 Day BR+ Trial</td>
+                                      <td>Darren Richardson<br /></td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td class="table-email">
+                                        <span
+                                          >DarrenRPersonlTrainer@gmail.com</span
+                                        >
+                                      </td>
+
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>9</td> -->
+                                      <td>#50391156</td>
+                                      <td>90 Day BR+ Trial</td>
+                                      <td>Darren Richardson<br /></td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td class="table-email">
+                                        <span
+                                          >DarrenRPersonlTrainer@gmail.com</span
+                                        >
+                                      </td>
+
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <!-- <tr>
+													<td>10</td>
+													<td>68788-9890</td>
+													<td>Dominican Republic</td>
+													<td>Cristóbal</td>
+													<td>854 Dapin Terrace</td>
+													<td>Broddy Jarry</td>
+													<td>Walter Group</td>
+													<td>8/10/2016</td>
+													<td>1</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>68428-740</td>
+													<td>Morocco</td>
+													<td>Tidili Mesfioua</td>
+													<td>67 Talisman Drive</td>
+													<td>Marjorie McGougan</td>
+													<td>Littel and Sons</td>
+													<td>2/8/2016</td>
+													<td>6</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>43269-779</td>
+													<td>Yemen</td>
+													<td>Az Zāhir</td>
+													<td>5583 Walton Hill</td>
+													<td>Edsel Sprigging</td>
+													<td>Kulas, Huels and Strosin</td>
+													<td>11/13/2017</td>
+													<td>6</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>13</td>
+													<td>0573-0174</td>
+													<td>Armenia</td>
+													<td>Doghs</td>
+													<td>7024 Eagan Court</td>
+													<td>Jess Gouldeby</td>
+													<td>Moen Group</td>
+													<td>9/10/2017</td>
+													<td>5</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>14</td>
+													<td>67868-117</td>
+													<td>Indonesia</td>
+													<td>Pakemitan</td>
+													<td>141 Spaight Avenue</td>
+													<td>Marys Matzl</td>
+													<td>Emard-Gerhold</td>
+													<td>3/5/2016</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>15</td>
+													<td>0641-6114</td>
+													<td>Kazakhstan</td>
+													<td>Shu</td>
+													<td>601 Chinook Street</td>
+													<td>Gabrila Franscioni</td>
+													<td>Gusikowski LLC</td>
+													<td>6/21/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>16</td>
+													<td>63629-4970</td>
+													<td>Thailand</td>
+													<td>Chang Klang</td>
+													<td>7109 Ilene Place</td>
+													<td>Cozmo Booker</td>
+													<td>Dickinson-Klein</td>
+													<td>2/29/2016</td>
+													<td>1</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>17</td>
+													<td>59528-4456</td>
+													<td>Canada</td>
+													<td>Melfort</td>
+													<td>141 Aberg Pass</td>
+													<td>Arlie Larking</td>
+													<td>Rosenbaum Group</td>
+													<td>7/7/2017</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>18</td>
+													<td>0054-0080</td>
+													<td>Iceland</td>
+													<td>Sandgerði</td>
+													<td>4 Derek Alley</td>
+													<td>Yorker Scogings</td>
+													<td>Gorczany LLC</td>
+													<td>7/6/2017</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>19</td>
+													<td>28475-810</td>
+													<td>Indonesia</td>
+													<td>Keleng</td>
+													<td>49 Swallow Court</td>
+													<td>Dominick Muscott</td>
+													<td>Swaniawski-Sipes</td>
+													<td>5/15/2016</td>
+													<td>2</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>20</td>
+													<td>53645-1070</td>
+													<td>Russia</td>
+													<td>Tugulym</td>
+													<td>611 Hintze Place</td>
+													<td>Laurette Kynforth</td>
+													<td>Torp-Satterfield</td>
+													<td>10/18/2017</td>
+													<td>1</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>21</td>
+													<td>66869-137</td>
+													<td>Indonesia</td>
+													<td>Binangun</td>
+													<td>535 Delladonna Trail</td>
+													<td>Beryl Lycett</td>
+													<td>Schoen Inc</td>
+													<td>6/28/2017</td>
+													<td>3</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>22</td>
+													<td>0069-0181</td>
+													<td>Czech Republic</td>
+													<td>Tlumačov</td>
+													<td>8 Hauk Street</td>
+													<td>Carny Boggas</td>
+													<td>Kuphal LLC</td>
+													<td>6/24/2016</td>
+													<td>2</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>23</td>
+													<td>50580-449</td>
+													<td>United States</td>
+													<td>Saint Augustine</td>
+													<td>9050 High Crossing Pass</td>
+													<td>Dyana Axelby</td>
+													<td>Runolfsdottir-Hayes</td>
+													<td>3/16/2017</td>
+													<td>2</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>24</td>
+													<td>55714-2247</td>
+													<td>Netherlands</td>
+													<td>Nijmegen</td>
+													<td>2 Laurel Avenue</td>
+													<td>Orelle Duffy</td>
+													<td>Roberts and Sons</td>
+													<td>4/5/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>25</td>
+													<td>48951-1208</td>
+													<td>Russia</td>
+													<td>Ryazhsk</td>
+													<td>131 Lerdahl Park</td>
+													<td>Taylor Kinder</td>
+													<td>Terry-Howell</td>
+													<td>4/19/2017</td>
+													<td>3</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>26</td>
+													<td>30142-179</td>
+													<td>Russia</td>
+													<td>Kazan</td>
+													<td>7 Erie Pass</td>
+													<td>Emanuele Aylesbury</td>
+													<td>Torp LLC</td>
+													<td>7/6/2017</td>
+													<td>3</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>27</td>
+													<td>49349-025</td>
+													<td>Thailand</td>
+													<td>Bang Racham</td>
+													<td>98943 Schiller Pass</td>
+													<td>Dorie Gibke</td>
+													<td>Tremblay and Sons</td>
+													<td>7/17/2017</td>
+													<td>1</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>28</td>
+													<td>55154-4989</td>
+													<td>Russia</td>
+													<td>Solnechnyy</td>
+													<td>485 Mockingbird Road</td>
+													<td>Melisandra Harragin</td>
+													<td>Turner-Cartwright</td>
+													<td>12/3/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>29</td>
+													<td>13537-426</td>
+													<td>Lebanon</td>
+													<td>Marjayoûn</td>
+													<td>9141 Cascade Street</td>
+													<td>Berenice Lampett</td>
+													<td>Johnston-Fritsch</td>
+													<td>12/27/2017</td>
+													<td>2</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>30</td>
+													<td>52565-009</td>
+													<td>Jamaica</td>
+													<td>Manchioneal</td>
+													<td>88503 Shopko Center</td>
+													<td>Tammie McMurthy</td>
+													<td>Sipes, Conn and Stiedemann</td>
+													<td>10/11/2017</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>31</td>
+													<td>0264-5535</td>
+													<td>United Kingdom</td>
+													<td>Glasgow</td>
+													<td>6 Lakeland Center</td>
+													<td>Dinnie Joyes</td>
+													<td>Keebler Group</td>
+													<td>6/5/2016</td>
+													<td>5</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>32</td>
+													<td>15370-110</td>
+													<td>China</td>
+													<td>Caijiang</td>
+													<td>2 Mariners Cove Way</td>
+													<td>Kerianne Axelbey</td>
+													<td>Wolff, Sporer and Bechtelar</td>
+													<td>2/20/2016</td>
+													<td>6</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>33</td>
+													<td>67046-271</td>
+													<td>China</td>
+													<td>Sanhe</td>
+													<td>537 Graceland Park</td>
+													<td>Kiley MacTerlagh</td>
+													<td>Hauck Inc</td>
+													<td>6/9/2017</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>34</td>
+													<td>49288-0356</td>
+													<td>Indonesia</td>
+													<td>Rupe</td>
+													<td>88 Blackbird Alley</td>
+													<td>Trula Shuttle</td>
+													<td>Will-Morissette</td>
+													<td>2/28/2016</td>
+													<td>5</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>35</td>
+													<td>41163-332</td>
+													<td>Poland</td>
+													<td>Borowno</td>
+													<td>72 Iowa Drive</td>
+													<td>Hollis Brislen</td>
+													<td>Lowe, Jaskolski and Gulgowski</td>
+													<td>7/7/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>36</td>
+													<td>68428-088</td>
+													<td>Greece</td>
+													<td>Néa Péramos</td>
+													<td>76 Haas Alley</td>
+													<td>Marsh Battin</td>
+													<td>Fay LLC</td>
+													<td>6/3/2017</td>
+													<td>6</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>37</td>
+													<td>52686-288</td>
+													<td>Chile</td>
+													<td>San Carlos</td>
+													<td>6915 Mifflin Terrace</td>
+													<td>Patrizio Pinnion</td>
+													<td>Haag-Stokes</td>
+													<td>10/7/2016</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>38</td>
+													<td>68084-534</td>
+													<td>Ukraine</td>
+													<td>Ukrainka</td>
+													<td>77 Charing Cross Trail</td>
+													<td>Ilario Daouse</td>
+													<td>Nitzsche, Davis and Romaguera</td>
+													<td>4/10/2016</td>
+													<td>3</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>39</td>
+													<td>60681-2104</td>
+													<td>China</td>
+													<td>Shangdu</td>
+													<td>61653 Welch Trail</td>
+													<td>Blisse Coleborn</td>
+													<td>Bailey, Windler and Marquardt</td>
+													<td>5/15/2017</td>
+													<td>6</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>40</td>
+													<td>63402-193</td>
+													<td>China</td>
+													<td>Xibin</td>
+													<td>9 Duke Point</td>
+													<td>Augustin Jouannisson</td>
+													<td>Witting, Reilly and Morar</td>
+													<td>7/3/2016</td>
+													<td>3</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>41</td>
+													<td>0078-0614</td>
+													<td>Russia</td>
+													<td>Skolkovo</td>
+													<td>5 Bay Center</td>
+													<td>Kaleena Jennison</td>
+													<td>Johnston Inc</td>
+													<td>11/26/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>42</td>
+													<td>60660-7787</td>
+													<td>Dominican Republic</td>
+													<td>Pimentel</td>
+													<td>5 Northwestern Drive</td>
+													<td>Mariel Petronis</td>
+													<td>Mitchell, Bashirian and Schroeder</td>
+													<td>1/28/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>43</td>
+													<td>51079-345</td>
+													<td>Malaysia</td>
+													<td>Kuala Lumpur</td>
+													<td>11 Melvin Hill</td>
+													<td>Adamo Scroggie</td>
+													<td>Cartwright Group</td>
+													<td>6/9/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>44</td>
+													<td>29033-021</td>
+													<td>Portugal</td>
+													<td>Serzedelo</td>
+													<td>380 Wayridge Street</td>
+													<td>Lewiss Kilmartin</td>
+													<td>Stroman-Orn</td>
+													<td>5/9/2017</td>
+													<td>3</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>45</td>
+													<td>12830-816</td>
+													<td>France</td>
+													<td>Fos-sur-Mer</td>
+													<td>9924 Mariners Cove Circle</td>
+													<td>Claretta Sachno</td>
+													<td>Zemlak-Cruickshank</td>
+													<td>9/4/2016</td>
+													<td>4</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>46</td>
+													<td>0781-5555</td>
+													<td>Indonesia</td>
+													<td>Kotaagung</td>
+													<td>9 Calypso Road</td>
+													<td>Bryn Van Castele</td>
+													<td>Beier-Mante</td>
+													<td>3/17/2017</td>
+													<td>5</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>47</td>
+													<td>0378-7004</td>
+													<td>Sweden</td>
+													<td>Karlstad</td>
+													<td>12000 Burrows Street</td>
+													<td>Tades Gatch</td>
+													<td>Klocko, Koelpin and Nikolaus</td>
+													<td>7/10/2016</td>
+													<td>5</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>48</td>
+													<td>49483-052</td>
+													<td>Indonesia</td>
+													<td>Kebonjaya</td>
+													<td>2 Oakridge Crossing</td>
+													<td>Reinold Jolland</td>
+													<td>Zieme-Funk</td>
+													<td>5/24/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>49</td>
+													<td>10812-357</td>
+													<td>Serbia</td>
+													<td>Ruma</td>
+													<td>7 Wayridge Plaza</td>
+													<td>Ky Brainsby</td>
+													<td>Towne Inc</td>
+													<td>11/1/2016</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>50</td>
+													<td>49349-222</td>
+													<td>China</td>
+													<td>Zhulan</td>
+													<td>55385 Stoughton Trail</td>
+													<td>Sheryl Giddings</td>
+													<td>Grimes, Ryan and Larkin</td>
+													<td>9/15/2017</td>
+													<td>3</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr> -->
+                                  </tbody>
+                                </table>
+                                <!--end: Datatable-->
+                              </div>
+                            </div>
+                            <!--end::Card-->
+                          </div>
+                          <!--end::Container-->
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="kt_tab_pane_2_4"
+                        role="tabpanel"
+                        aria-labelledby="kt_tab_pane_2_4"
+                      >
+                        <div class="d-flex flex-column-fluid">
+                          <!--begin::Container-->
+                          <div class="container">
+                            <!--begin::Card-->
+                            <div class="card card-custom">
+                              <div class="card-header flex-wrap py-5">
+                                <div class="card-title">
+                                  <h3 class="card-label">
+                                    Recent Orders
+                                  </h3>
+                                </div>
+                                <div class="card-toolbar">
+                                  <!--end::Dropdown-->
+                                  <!--begin::Button-->
+                                  <a
+                                    href="#"
+                                    class="btn btn-primary font-weight-bolder"
+                                  >
+                                    <span class="svg-icon svg-icon-md">
+                                      <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Flatten.svg-->
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="24px"
+                                        height="24px"
+                                        viewBox="0 0 24 24"
+                                        version="1.1"
+                                      >
+                                        <g
+                                          stroke="none"
+                                          stroke-width="1"
+                                          fill="none"
+                                          fill-rule="evenodd"
+                                        >
+                                          <polygon
+                                            points="0 0 24 0 24 24 0 24"
+                                          ></polygon>
+                                          <path
+                                            d="M18,14 C16.3431458,14 15,12.6568542 15,11 C15,9.34314575 16.3431458,8 18,8 C19.6568542,8 21,9.34314575 21,11 C21,12.6568542 19.6568542,14 18,14 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                                            fill="#000000"
+                                            fill-rule="nonzero"
+                                            opacity="0.3"
+                                          ></path>
+                                          <path
+                                            d="M17.6011961,15.0006174 C21.0077043,15.0378534 23.7891749,16.7601418 23.9984937,20.4 C24.0069246,20.5466056 23.9984937,21 23.4559499,21 L19.6,21 C19.6,18.7490654 18.8562935,16.6718327 17.6011961,15.0006174 Z M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                                            fill="#000000"
+                                            fill-rule="nonzero"
+                                          ></path>
+                                        </g>
+                                      </svg>
+                                      <!--end::Svg Icon--> </span
+                                    >Add New User</a
+                                  >
+                                  <!--end::Button-->
+                                </div>
+                              </div>
+                              <div class="card-body">
+                                <!--begin: Datatable-->
+                                <table
+                                  class="table table-separate table-head-custom table-checkable"
+                                  id="kt_datatable2"
+                                >
+                                  <thead>
+                                    <tr>
+                                      <!-- <th>Record ID</th> -->
+                                      <th>Order</th>
+                                      <th>Subscription Item</th>
+                                      <th>Customer</th>
+                                      <th>Next Charge Date</th>
+                                      <th>Subscription Cost</th>
+                                      <th>Trx Total</th>
+                                      <th>Hello</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <!-- <td>1</td> -->
+                                      <td>#50419460</td>
+                                      <td>
+                                        Free BR+ 90 Day + Nutrition Bundle
+                                      </td>
+                                      <td class="renewal-customer">
+                                        Kathy Winball<br />
+                                        <span> kathyw@gmail.com</span>
+                                      </td>
+                                      <td>July 20, 2020</td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>3</td> -->
+                                      <td>#50418482</td>
+                                      <td>
+                                        Free BR+ 90 Day + Nutrition Bundle
+                                      </td>
+                                      <td class="renewal-customer">
+                                        Jareb Labro <br />
+                                        <span>dalekerman@gmail.com</span>
+                                      </td>
+                                      <td>July 18, 2020:01:10:45</td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>1</td> -->
+                                      <td>#50419460</td>
+                                      <td>
+                                        Free BR+ 90 Day + Nutrition Bundle
+                                      </td>
+                                      <td class="renewal-customer">
+                                        São Félix <br />
+                                        <span> saof@gmail.com</span>
+                                      </td>
+                                      <td>July 18, 2020:07:30:14</td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <!-- <td>5</td> -->
+                                      <td>#50406220</td>
+                                      <td>$15 off for 1 month BR+</td>
+                                      <td class="renewal-customer">
+                                        Shawnee Mission <br />
+                                        <span>dalekerman@gmail.com</span>
+                                      </td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td>$39.99</td>
+                                      <td>3</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <!-- <td>6</td> -->
+                                      <td>#50400519</td>
+                                      <td>$15 off for 1 month BR+</td>
+                                      <td class="renewal-customer">
+                                        Paul Dancer<br />
+                                        <span> pauljdancer.com</span>
+                                      </td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td>$39.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+
+                                    <tr>
+                                      <!-- <td>7</td> -->
+                                      <td>#50392359</td>
+                                      <td>$15 off for 1 month BR+</td>
+                                      <td class="renewal-customer">
+                                        Ashley Jones<br /><span>
+                                          ashleyj@gmail.com
+                                        </span>
+                                      </td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td>$39.99</td>
+                                      <td>1</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>8</td> -->
+                                      <td>#50391578</td>
+                                      <td>90 Day BR+ Trial</td>
+                                      <td class="renewal-customer">
+                                        darrenrichardson@gmail.com <br />
+                                        <span>Darren Richardson </span>
+                                      </td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <tr>
+                                      <!-- <td>9</td> -->
+                                      <td>#50391156</td>
+                                      <td>90 Day BR+ Trial</td>
+                                      <td class="renewal-customer">
+                                        Darren Richardson<br />
+                                        <span>darrenrichardson@gmail.com</span>
+                                      </td>
+                                      <td>July 18, 2020:01:10:45AM</td>
+                                      <td>$19.99</td>
+                                      <td>2</td>
+                                      <td nowrap="nowrap"></td>
+                                    </tr>
+                                    <!-- <tr>
+													<td>10</td>
+													<td>68788-9890</td>
+													<td>Dominican Republic</td>
+													<td>Cristóbal</td>
+													<td>854 Dapin Terrace</td>
+													<td>Broddy Jarry</td>
+													<td>Walter Group</td>
+													<td>8/10/2016</td>
+													<td>1</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>68428-740</td>
+													<td>Morocco</td>
+													<td>Tidili Mesfioua</td>
+													<td>67 Talisman Drive</td>
+													<td>Marjorie McGougan</td>
+													<td>Littel and Sons</td>
+													<td>2/8/2016</td>
+													<td>6</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>43269-779</td>
+													<td>Yemen</td>
+													<td>Az Zāhir</td>
+													<td>5583 Walton Hill</td>
+													<td>Edsel Sprigging</td>
+													<td>Kulas, Huels and Strosin</td>
+													<td>11/13/2017</td>
+													<td>6</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>13</td>
+													<td>0573-0174</td>
+													<td>Armenia</td>
+													<td>Doghs</td>
+													<td>7024 Eagan Court</td>
+													<td>Jess Gouldeby</td>
+													<td>Moen Group</td>
+													<td>9/10/2017</td>
+													<td>5</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>14</td>
+													<td>67868-117</td>
+													<td>Indonesia</td>
+													<td>Pakemitan</td>
+													<td>141 Spaight Avenue</td>
+													<td>Marys Matzl</td>
+													<td>Emard-Gerhold</td>
+													<td>3/5/2016</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>15</td>
+													<td>0641-6114</td>
+													<td>Kazakhstan</td>
+													<td>Shu</td>
+													<td>601 Chinook Street</td>
+													<td>Gabrila Franscioni</td>
+													<td>Gusikowski LLC</td>
+													<td>6/21/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>16</td>
+													<td>63629-4970</td>
+													<td>Thailand</td>
+													<td>Chang Klang</td>
+													<td>7109 Ilene Place</td>
+													<td>Cozmo Booker</td>
+													<td>Dickinson-Klein</td>
+													<td>2/29/2016</td>
+													<td>1</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>17</td>
+													<td>59528-4456</td>
+													<td>Canada</td>
+													<td>Melfort</td>
+													<td>141 Aberg Pass</td>
+													<td>Arlie Larking</td>
+													<td>Rosenbaum Group</td>
+													<td>7/7/2017</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>18</td>
+													<td>0054-0080</td>
+													<td>Iceland</td>
+													<td>Sandgerði</td>
+													<td>4 Derek Alley</td>
+													<td>Yorker Scogings</td>
+													<td>Gorczany LLC</td>
+													<td>7/6/2017</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>19</td>
+													<td>28475-810</td>
+													<td>Indonesia</td>
+													<td>Keleng</td>
+													<td>49 Swallow Court</td>
+													<td>Dominick Muscott</td>
+													<td>Swaniawski-Sipes</td>
+													<td>5/15/2016</td>
+													<td>2</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>20</td>
+													<td>53645-1070</td>
+													<td>Russia</td>
+													<td>Tugulym</td>
+													<td>611 Hintze Place</td>
+													<td>Laurette Kynforth</td>
+													<td>Torp-Satterfield</td>
+													<td>10/18/2017</td>
+													<td>1</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>21</td>
+													<td>66869-137</td>
+													<td>Indonesia</td>
+													<td>Binangun</td>
+													<td>535 Delladonna Trail</td>
+													<td>Beryl Lycett</td>
+													<td>Schoen Inc</td>
+													<td>6/28/2017</td>
+													<td>3</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>22</td>
+													<td>0069-0181</td>
+													<td>Czech Republic</td>
+													<td>Tlumačov</td>
+													<td>8 Hauk Street</td>
+													<td>Carny Boggas</td>
+													<td>Kuphal LLC</td>
+													<td>6/24/2016</td>
+													<td>2</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>23</td>
+													<td>50580-449</td>
+													<td>United States</td>
+													<td>Saint Augustine</td>
+													<td>9050 High Crossing Pass</td>
+													<td>Dyana Axelby</td>
+													<td>Runolfsdottir-Hayes</td>
+													<td>3/16/2017</td>
+													<td>2</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>24</td>
+													<td>55714-2247</td>
+													<td>Netherlands</td>
+													<td>Nijmegen</td>
+													<td>2 Laurel Avenue</td>
+													<td>Orelle Duffy</td>
+													<td>Roberts and Sons</td>
+													<td>4/5/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>25</td>
+													<td>48951-1208</td>
+													<td>Russia</td>
+													<td>Ryazhsk</td>
+													<td>131 Lerdahl Park</td>
+													<td>Taylor Kinder</td>
+													<td>Terry-Howell</td>
+													<td>4/19/2017</td>
+													<td>3</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>26</td>
+													<td>30142-179</td>
+													<td>Russia</td>
+													<td>Kazan</td>
+													<td>7 Erie Pass</td>
+													<td>Emanuele Aylesbury</td>
+													<td>Torp LLC</td>
+													<td>7/6/2017</td>
+													<td>3</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>27</td>
+													<td>49349-025</td>
+													<td>Thailand</td>
+													<td>Bang Racham</td>
+													<td>98943 Schiller Pass</td>
+													<td>Dorie Gibke</td>
+													<td>Tremblay and Sons</td>
+													<td>7/17/2017</td>
+													<td>1</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>28</td>
+													<td>55154-4989</td>
+													<td>Russia</td>
+													<td>Solnechnyy</td>
+													<td>485 Mockingbird Road</td>
+													<td>Melisandra Harragin</td>
+													<td>Turner-Cartwright</td>
+													<td>12/3/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>29</td>
+													<td>13537-426</td>
+													<td>Lebanon</td>
+													<td>Marjayoûn</td>
+													<td>9141 Cascade Street</td>
+													<td>Berenice Lampett</td>
+													<td>Johnston-Fritsch</td>
+													<td>12/27/2017</td>
+													<td>2</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>30</td>
+													<td>52565-009</td>
+													<td>Jamaica</td>
+													<td>Manchioneal</td>
+													<td>88503 Shopko Center</td>
+													<td>Tammie McMurthy</td>
+													<td>Sipes, Conn and Stiedemann</td>
+													<td>10/11/2017</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>31</td>
+													<td>0264-5535</td>
+													<td>United Kingdom</td>
+													<td>Glasgow</td>
+													<td>6 Lakeland Center</td>
+													<td>Dinnie Joyes</td>
+													<td>Keebler Group</td>
+													<td>6/5/2016</td>
+													<td>5</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>32</td>
+													<td>15370-110</td>
+													<td>China</td>
+													<td>Caijiang</td>
+													<td>2 Mariners Cove Way</td>
+													<td>Kerianne Axelbey</td>
+													<td>Wolff, Sporer and Bechtelar</td>
+													<td>2/20/2016</td>
+													<td>6</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>33</td>
+													<td>67046-271</td>
+													<td>China</td>
+													<td>Sanhe</td>
+													<td>537 Graceland Park</td>
+													<td>Kiley MacTerlagh</td>
+													<td>Hauck Inc</td>
+													<td>6/9/2017</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>34</td>
+													<td>49288-0356</td>
+													<td>Indonesia</td>
+													<td>Rupe</td>
+													<td>88 Blackbird Alley</td>
+													<td>Trula Shuttle</td>
+													<td>Will-Morissette</td>
+													<td>2/28/2016</td>
+													<td>5</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>35</td>
+													<td>41163-332</td>
+													<td>Poland</td>
+													<td>Borowno</td>
+													<td>72 Iowa Drive</td>
+													<td>Hollis Brislen</td>
+													<td>Lowe, Jaskolski and Gulgowski</td>
+													<td>7/7/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>36</td>
+													<td>68428-088</td>
+													<td>Greece</td>
+													<td>Néa Péramos</td>
+													<td>76 Haas Alley</td>
+													<td>Marsh Battin</td>
+													<td>Fay LLC</td>
+													<td>6/3/2017</td>
+													<td>6</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>37</td>
+													<td>52686-288</td>
+													<td>Chile</td>
+													<td>San Carlos</td>
+													<td>6915 Mifflin Terrace</td>
+													<td>Patrizio Pinnion</td>
+													<td>Haag-Stokes</td>
+													<td>10/7/2016</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>38</td>
+													<td>68084-534</td>
+													<td>Ukraine</td>
+													<td>Ukrainka</td>
+													<td>77 Charing Cross Trail</td>
+													<td>Ilario Daouse</td>
+													<td>Nitzsche, Davis and Romaguera</td>
+													<td>4/10/2016</td>
+													<td>3</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>39</td>
+													<td>60681-2104</td>
+													<td>China</td>
+													<td>Shangdu</td>
+													<td>61653 Welch Trail</td>
+													<td>Blisse Coleborn</td>
+													<td>Bailey, Windler and Marquardt</td>
+													<td>5/15/2017</td>
+													<td>6</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>40</td>
+													<td>63402-193</td>
+													<td>China</td>
+													<td>Xibin</td>
+													<td>9 Duke Point</td>
+													<td>Augustin Jouannisson</td>
+													<td>Witting, Reilly and Morar</td>
+													<td>7/3/2016</td>
+													<td>3</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>41</td>
+													<td>0078-0614</td>
+													<td>Russia</td>
+													<td>Skolkovo</td>
+													<td>5 Bay Center</td>
+													<td>Kaleena Jennison</td>
+													<td>Johnston Inc</td>
+													<td>11/26/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>42</td>
+													<td>60660-7787</td>
+													<td>Dominican Republic</td>
+													<td>Pimentel</td>
+													<td>5 Northwestern Drive</td>
+													<td>Mariel Petronis</td>
+													<td>Mitchell, Bashirian and Schroeder</td>
+													<td>1/28/2016</td>
+													<td>5</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>43</td>
+													<td>51079-345</td>
+													<td>Malaysia</td>
+													<td>Kuala Lumpur</td>
+													<td>11 Melvin Hill</td>
+													<td>Adamo Scroggie</td>
+													<td>Cartwright Group</td>
+													<td>6/9/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>44</td>
+													<td>29033-021</td>
+													<td>Portugal</td>
+													<td>Serzedelo</td>
+													<td>380 Wayridge Street</td>
+													<td>Lewiss Kilmartin</td>
+													<td>Stroman-Orn</td>
+													<td>5/9/2017</td>
+													<td>3</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>45</td>
+													<td>12830-816</td>
+													<td>France</td>
+													<td>Fos-sur-Mer</td>
+													<td>9924 Mariners Cove Circle</td>
+													<td>Claretta Sachno</td>
+													<td>Zemlak-Cruickshank</td>
+													<td>9/4/2016</td>
+													<td>4</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>46</td>
+													<td>0781-5555</td>
+													<td>Indonesia</td>
+													<td>Kotaagung</td>
+													<td>9 Calypso Road</td>
+													<td>Bryn Van Castele</td>
+													<td>Beier-Mante</td>
+													<td>3/17/2017</td>
+													<td>5</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>47</td>
+													<td>0378-7004</td>
+													<td>Sweden</td>
+													<td>Karlstad</td>
+													<td>12000 Burrows Street</td>
+													<td>Tades Gatch</td>
+													<td>Klocko, Koelpin and Nikolaus</td>
+													<td>7/10/2016</td>
+													<td>5</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>48</td>
+													<td>49483-052</td>
+													<td>Indonesia</td>
+													<td>Kebonjaya</td>
+													<td>2 Oakridge Crossing</td>
+													<td>Reinold Jolland</td>
+													<td>Zieme-Funk</td>
+													<td>5/24/2016</td>
+													<td>4</td>
+													<td>2</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>49</td>
+													<td>10812-357</td>
+													<td>Serbia</td>
+													<td>Ruma</td>
+													<td>7 Wayridge Plaza</td>
+													<td>Ky Brainsby</td>
+													<td>Towne Inc</td>
+													<td>11/1/2016</td>
+													<td>2</td>
+													<td>3</td>
+													<td nowrap="nowrap"></td>
+												</tr>
+												<tr>
+													<td>50</td>
+													<td>49349-222</td>
+													<td>China</td>
+													<td>Zhulan</td>
+													<td>55385 Stoughton Trail</td>
+													<td>Sheryl Giddings</td>
+													<td>Grimes, Ryan and Larkin</td>
+													<td>9/15/2017</td>
+													<td>3</td>
+													<td>1</td>
+													<td nowrap="nowrap"></td>
+												</tr> -->
+                                  </tbody>
+                                </table>
+                                <!--end: Datatable-->
+                              </div>
+                            </div>
+                            <!--end::Card-->
+                          </div>
+                          <!--end::Container-->
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="kt_tab_pane_3_4"
+                        role="tabpanel"
+                        aria-labelledby="kt_tab_pane_3_4"
+                      >
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--end::Card-->
+              </div>
+              <!--end::Container-->
+            </div>
+            <!--end::Entry-->
+          </div>
+          <!--end::Content-->
+          <div
+            class="modal fade"
+            id="exampleModalSizeLg"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalSizeLg"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Manage Order
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                  </button>
+                </div>
+                <div class="modal-body modal-lg">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h5>Order Details</h5>
+                      <p>
+                        3 months free + a free nutrition guide<br />
+                        1 x 19.99 each<br />
+                        Charge every 1 month 
+                        <div class="flexDisplay" style="margin: 1em 0;">
+                          <button type="button" class="btn btn-info btn-sm mr-2">
+                            Edit Details
+                          </button>
+                          <button type="button" class="btn btn-danger btn-sm mr-2">
+                            Delete User
+                          </button>
+                        </div>
+                      </p>
+                    </div>
+                    <div class="col-sm-6">
+                      <h5>Personal & Billing Information</h5>
+                      Darren Richardson Personal Trainer <br />
+                      4 Port Road, <br />
+                      Carlisle CA2 7AJ <br />
+                      United Kingdom <br />
+                      <a href="mailto:DarrenRPersonlTrainer@gmail.com"
+                        >DarrenRPersonlTrainer@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="accordion accordion-solid accordion-toggle-plus"
+                    id="accordionExample3"
+                    style="margin-top: 1em;"
+                  >
+                    <div class="card">
+                      <div class="card-header" id="headingOne3">
+                        <div
+                          class="card-title"
+                          data-toggle="collapse"
+                          data-target="#collapseOne3"
+                          aria-ex                    nm panded="true"
+                        >
+                          Past Charges
+                        </div>
+                      </div>
+                      <div
+                        id="collapseOne3"
+                        class="collapse show"
+                        data-parent="#accordionExample3"
+                        style=""
+                      >
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-4">
+                                <p><strong> BR+ Membership 90 Day Trial</strong></p>
+                                <span style="margin-right: 1em;">Order Date: July 20, 2020 11:15</span> <br>
+                                                                <span style="margin-right: 1em;">Charge Date: July 20, 2020 11:15</span> <span
+                                                                  class="label label-success label-dot mr-2"></span><span class="font-weight-bold text-success">Success</span>
+
+                                <span></span>
+                            </div>
+                            <div class="col-sm-4 flexColumn">
+                              <p><strong> BR+ Membership 90 Day Trial</strong></p>
+                              
+                              **** **** **** 2267  <span style="margin-left: 1em;">- Visa</span> <br />
+                              Expires in 11/2022
+                              
+                            </div>
+                            <div class="col-sm-4 flexColumn">
+                              <p><strong> Order Details</strong></p>
+                            <div style="display: flex; justify-content: space-between"> 
+                              <span> Subtotal: </span>
+                              <span> $0.00</span> 
+                            </div>
+                            <div style="display: flex; justify-content: space-between">
+                              <span> Shipping: </span>
+                              <span> $0.00</span>
+                              </div>
+                              <div style="display: flex; justify-content: space-between">
+                                <span> Taxes: </span>
+                                <span> $0.00</span>
+                              </div>
+                              <div style="display: flex; justify-content: space-between">
+                                <span><strong>Total:</strong></span>
+                                <span><strong>$0.00</strong></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo3">
+                        <div
+                          class="card-title collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapseTwo3"
+                        >
+                          Purchase History
+                        </div>
+                      </div>
+                      <div
+                        id="collapseTwo3"
+                        class="collapse"
+                        data-parent="#accordionExample3"
+                      >
+                        <div class="card-body">
+                          <table class="table rc_table" table-responsive="true">
+                            <thead>
+                              <tr>
+                                <th>Date</th>
+                                <th>Order</th>
+                                <th>Subscription</th>
+                                <th class="rc_text--right">Amount</th>
+                              </tr>
+                            </thead>
+                            <tbody class="rc_history__items">
+                              <tr class="">
+                                <td class="">
+                                  July 19, 2020
+                                </td>
+                                <td class="">
+                                  <a href="#">2776</a>
+                                </td>
+                                <td class="">
+                                  <a href="#">90 Day BR+ Trial</a>
+                                </td>
+                                <td class="">
+                                  $0.00
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree3">
+                        <div
+                          class="card-title collapsed"
+                          data-toggle="collapse"
+                          data-target="#collapseThree3"
+                        >
+                          Subscriptions
+                        </div>
+                      </div>
+                      <div
+                        id="collapseThree3"
+                        class="collapse"
+                        data-parent="#accordionExample3"
+                      >
+                        <div class="card-body">
+                          <table
+                            class="rc_schedule__order__items rc_table table"
+                            table-valign="middle"
+                            table-border-bottom="true"
+                          >
+                            <thead class="rc_visible_xs">
+                              <tr>
+                                <th class="">Products</th>
+                                <th class="">Quantity</th>
+                                <th class="">USD</th>
+                                <th class="">Type</th>
+                                <th>Charge Date</th>
+                                <th class=""></th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr
+                                class="rc_schedule__order__item rc_schedule__order__item__1 product-"
+                              >
+                                <td>
+                                  <span
+                                    class="rc_schedule__order__item__product"
+                                  >
+                                    90 Day BR+ Trial
+                                  </span>
+                                </td>
+                                <td class="rc_text--right">1</td>
+                                <td class="rc_text--right">
+                                  $19.99
+                                </td>
+                                <td class="rc_text--center">
+                                  <span
+                                    class="rc_schedule__order__item__type rc_schedule__order__item__type__91201545"
+                                  >
+                                    Recurring
+                                  </span>
+                                </td>
+                                <td class="rc_text--center">
+                                  <span
+                                    class="rc_schedule__order__item__type rc_schedule__order__item__type__91201545"
+                                  >
+                                    Oct, 17, 2020
+                                  </span>
+                                </td>
+                                <td>
+                                  <span
+                                    class="rc_schedule__order__item__status"
+                                  >
+                                    <span
+                                      class="rc_schedule__order__item__skip"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="toggle-delivery"
+                                        data-skipped="false"
+                                        data-charge-id="262051424"
+                                        data-charge-type="QUEUED_CHARGE"
+                                        data-item-id="91201545"
+                                        data-date="2020-10-17"
+                                      >
+                                        Skip
+                                      </a>
+                                    </span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="rc_schedule__order__item__edit">
+                                    <a
+                                      href="/admin/customers/cc2199e62bef3bbe/subscriptions/91201545"
+                                      >Edit</a
+                                    >
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr
+                                class="rc_schedule__order__item rc_schedule__order__item__1 product-"
+                              >
+                                <td>
+                                  <span
+                                    class="rc_schedule__order__item__product"
+                                  >
+                                    90 Day BR+ Trial
+                                  </span>
+                                </td>
+                                <td class="rc_text--right">1</td>
+                                <td class="rc_text--right">
+                                  $19.99
+                                </td>
+                                <td class="rc_text--center">
+                                  <span
+                                    class="rc_schedule__order__item__type rc_schedule__order__item__type__91201545"
+                                  >
+                                    Recurring
+                                  </span>
+                                </td>
+                                <td class="rc_text--center">
+                                  <span
+                                    class="rc_schedule__order__item__type rc_schedule__order__item__type__91201545"
+                                  >
+                                    Nov, 17, 2020
+                                  </span>
+                                </td>
+                                <td>
+                                  <span
+                                    class="rc_schedule__order__item__status"
+                                  >
+                                    <span
+                                      class="rc_schedule__order__item__skip"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="toggle-delivery"
+                                        data-skipped="false"
+                                        data-charge-id="262051424"
+                                        data-charge-type="QUEUED_CHARGE"
+                                        data-item-id="91201545"
+                                        data-date="2020-10-17"
+                                      >
+                                        Skip
+                                      </a>
+                                    </span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="rc_schedule__order__item__edit">
+                                    <a
+                                      href="/admin/customers/cc2199e62bef3bbe/subscriptions/91201545"
+                                      >Edit</a
+                                    >
+                                  </span>
+                                </td>
+                              </tr>
+                              <tr
+                                class="rc_schedule__order__item rc_schedule__order__item__1 product-"
+                              >
+                                <td>
+                                  <span
+                                    class="rc_schedule__order__item__product"
+                                  >
+                                    90 Day BR+ Trial
+                                  </span>
+                                </td>
+                                <td class="rc_text--right">1</td>
+                                <td class="rc_text--right">
+                                  $19.99
+                                </td>
+                                <td class="rc_text--center">
+                                  <span
+                                    class="rc_schedule__order__item__type rc_schedule__order__item__type__91201545"
+                                  >
+                                    Recurring
+                                  </span>
+                                </td>
+                                <td class="rc_text--center">
+                                  <span
+                                    class="rc_schedule__order__item__type rc_schedule__order__item__type__91201545"
+                                  >
+                                    Dec, 17, 2020
+                                  </span>
+                                </td>
+                                <td>
+                                  <span
+                                    class="rc_schedule__order__item__status"
+                                  >
+                                    <span
+                                      class="rc_schedule__order__item__skip"
+                                    >
+                                      <a
+                                        href="#"
+                                        class="toggle-delivery"
+                                        data-skipped="false"
+                                        data-charge-id="262051424"
+                                        data-charge-type="QUEUED_CHARGE"
+                                        data-item-id="91201545"
+                                        data-date="2020-10-17"
+                                      >
+                                        Skip
+                                      </a>
+                                    </span>
+                                  </span>
+                                </td>
+                                <td>
+                                  <span class="rc_schedule__order__item__edit">
+                                    <a
+                                      href="/admin/customers/cc2199e62bef3bbe/subscriptions/91201545"
+                                      >Edit</a
+                                    >
+                                  </span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-light-primary font-weight-bold"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary font-weight-bold"
+                  >
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--begin::Footer-->
+          <div
+            class="footer bg-white py-4 d-flex flex-lg-column"
+            id="kt_footer"
+          >
+            <!--begin::Container-->
+            <div
+              class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between"
+            >
+              <!--begin::Copyright-->
+              <div class="text-dark order-2 order-md-1">
+                <span class="text-muted font-weight-bold mr-2">2020©</span>
+                <a
+                  href="http://keenthemes.com/metronic"
+                  target="_blank"
+                  class="text-dark-75 text-hover-primary"
+                  >BodyRock+</a
+                >
+              </div>
+              <!--end::Copyright-->
+            </div>
+            <!--end::Container-->
+          </div>
+          <!--end::Footer-->
+        </div>
+        <!--end::Wrapper-->
+      </div>
+      <!--end::Page-->
+    </div>
+    <!--end::Main-->
+    <div id="kt_quick_user" class="offcanvas offcanvas-right p-10">
+      <!--begin::Header-->
+      <div
+        class="offcanvas-header d-flex align-items-center justify-content-between pb-5"
+      ></div>
+      <!--end::Header-->
+      <!--begin::Content-->
+      <div class="offcanvas-content pr-5 mr-n5">
+        <!--begin::Header-->
+        <div class="d-flex align-items-center mt-5">
+          <div class="d-flex flex-column">
+            <a
+              href="#"
+              class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary"
+              >BodyRock Admin</a
+            >
+            <div class="navi mt-2">
+              <a
+                href="#"
+                class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5"
+                >Sign Out</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--end::Header-->
+      </div>
+      <!--end::Content-->
+    </div>
+    <!-- end::User Panel-->
+    <!--begin::Quick Cart-->
+    <div id="kt_quick_cart" class="offcanvas offcanvas-right p-10">
+      <!--begin::Header-->
+      <div
+        class="offcanvas-header d-flex align-items-center justify-content-between pb-7"
+      >
+        <h4 class="font-weight-bold m-0">Shopping Cart</h4>
+        <a
+          href="#"
+          class="btn btn-xs btn-icon btn-light btn-hover-primary"
+          id="kt_quick_cart_close"
+        >
+          <i class="ki ki-close icon-xs text-muted"></i>
+        </a>
+      </div>
+      <!--end::Header-->
+      <!--begin::Content-->
+      <div class="offcanvas-content">
+        <!--begin::Wrapper-->
+        <div class="offcanvas-wrapper mb-5 scroll-pull">
+          <!--begin::Item-->
+          <div class="d-flex align-items-center justify-content-between py-8">
+            <div class="d-flex flex-column mr-2">
+              <a
+                href="#"
+                class="font-weight-bold text-dark-75 font-size-lg text-hover-primary"
+                >iBlender</a
+              >
+              <span class="text-muted">The best kitchen gadget in 2020</span>
+              <div class="d-flex align-items-center mt-2">
+                <span class="font-weight-bold mr-1 text-dark-75 font-size-lg"
+                  >$ 350</span
+                >
+                <span class="text-muted mr-1">for</span>
+                <span class="font-weight-bold mr-2 text-dark-75 font-size-lg"
+                  >5</span
+                >
+                <a href="#" class="btn btn-xs btn-light-success btn-icon mr-2">
+                  <i class="ki ki-minus icon-xs"></i>
+                </a>
+                <a href="#" class="btn btn-xs btn-light-success btn-icon">
+                  <i class="ki ki-plus icon-xs"></i>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="symbol symbol-70 flex-shrink-0">
+              <img src="assets/media/stock-600x400/img-1.jpg" title="" alt="" />
+            </a>
+          </div>
+          <!--end::Item-->
+          <!--begin::Separator-->
+          <div class="separator separator-solid"></div>
+          <!--end::Separator-->
+          <!--begin::Item-->
+          <div class="d-flex align-items-center justify-content-between py-8">
+            <div class="d-flex flex-column mr-2">
+              <a
+                href="#"
+                class="font-weight-bold text-dark-75 font-size-lg text-hover-primary"
+                >SmartCleaner</a
+              >
+              <span class="text-muted">Smart tool for cooking</span>
+              <div class="d-flex align-items-center mt-2">
+                <span class="font-weight-bold mr-1 text-dark-75 font-size-lg"
+                  >$ 650</span
+                >
+                <span class="text-muted mr-1">for</span>
+                <span class="font-weight-bold mr-2 text-dark-75 font-size-lg"
+                  >4</span
+                >
+                <a href="#" class="btn btn-xs btn-light-success btn-icon mr-2">
+                  <i class="ki ki-minus icon-xs"></i>
+                </a>
+                <a href="#" class="btn btn-xs btn-light-success btn-icon">
+                  <i class="ki ki-plus icon-xs"></i>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="symbol symbol-70 flex-shrink-0">
+              <img src="assets/media/stock-600x400/img-2.jpg" title="" alt="" />
+            </a>
+          </div>
+          <!--end::Item-->
+          <!--begin::Separator-->
+          <div class="separator separator-solid"></div>
+          <!--end::Separator-->
+          <!--begin::Item-->
+          <div class="d-flex align-items-center justify-content-between py-8">
+            <div class="d-flex flex-column mr-2">
+              <a
+                href="#"
+                class="font-weight-bold text-dark-75 font-size-lg text-hover-primary"
+                >CameraMax</a
+              >
+              <span class="text-muted"
+                >Professional camera for edge cutting shots</span
+              >
+              <div class="d-flex align-items-center mt-2">
+                <span class="font-weight-bold mr-1 text-dark-75 font-size-lg"
+                  >$ 150</span
+                >
+                <span class="text-muted mr-1">for</span>
+                <span class="font-weight-bold mr-2 text-dark-75 font-size-lg"
+                  >3</span
+                >
+                <a href="#" class="btn btn-xs btn-light-success btn-icon mr-2">
+                  <i class="ki ki-minus icon-xs"></i>
+                </a>
+                <a href="#" class="btn btn-xs btn-light-success btn-icon">
+                  <i class="ki ki-plus icon-xs"></i>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="symbol symbol-70 flex-shrink-0">
+              <img src="assets/media/stock-600x400/img-3.jpg" title="" alt="" />
+            </a>
+          </div>
+          <!--end::Item-->
+          <!--begin::Separator-->
+          <div class="separator separator-solid"></div>
+          <!--end::Separator-->
+          <!--begin::Item-->
+          <div class="d-flex align-items-center justify-content-between py-8">
+            <div class="d-flex flex-column mr-2">
+              <a href="#" class="font-weight-bold text-dark text-hover-primary"
+                >4D Printer</a
+              >
+              <span class="text-muted">Manufactoring unique objects</span>
+              <div class="d-flex align-items-center mt-2">
+                <span class="font-weight-bold mr-1 text-dark-75 font-size-lg"
+                  >$ 1450</span
+                >
+                <span class="text-muted mr-1">for</span>
+                <span class="font-weight-bold mr-2 text-dark-75 font-size-lg"
+                  >7</span
+                >
+                <a href="#" class="btn btn-xs btn-light-success btn-icon mr-2">
+                  <i class="ki ki-minus icon-xs"></i>
+                </a>
+                <a href="#" class="btn btn-xs btn-light-success btn-icon">
+                  <i class="ki ki-plus icon-xs"></i>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="symbol symbol-70 flex-shrink-0">
+              <img src="assets/media/stock-600x400/img-4.jpg" title="" alt="" />
+            </a>
+          </div>
+          <!--end::Item-->
+          <!--begin::Separator-->
+          <div class="separator separator-solid"></div>
+          <!--end::Separator-->
+          <!--begin::Item-->
+          <div class="d-flex align-items-center justify-content-between py-8">
+            <div class="d-flex flex-column mr-2">
+              <a href="#" class="font-weight-bold text-dark text-hover-primary"
+                >MotionWire</a
+              >
+              <span class="text-muted">Perfect animation tool</span>
+              <div class="d-flex align-items-center mt-2">
+                <span class="font-weight-bold mr-1 text-dark-75 font-size-lg"
+                  >$ 650</span
+                >
+                <span class="text-muted mr-1">for</span>
+                <span class="font-weight-bold mr-2 text-dark-75 font-size-lg"
+                  >7</span
+                >
+                <a href="#" class="btn btn-xs btn-light-success btn-icon mr-2">
+                  <i class="ki ki-minus icon-xs"></i>
+                </a>
+                <a href="#" class="btn btn-xs btn-light-success btn-icon">
+                  <i class="ki ki-plus icon-xs"></i>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="symbol symbol-70 flex-shrink-0">
+              <img src="assets/media/stock-600x400/img-8.jpg" title="" alt="" />
+            </a>
+          </div>
+          <!--end::Item-->
+        </div>
+        <!--end::Wrapper-->
+        <!--begin::Purchase-->
+        <div class="offcanvas-footer">
+          <div class="d-flex align-items-center justify-content-between mb-4">
+            <span class="font-weight-bold text-muted font-size-sm mr-2"
+              >Total</span
+            >
+            <span class="font-weight-bolder text-dark-50 text-right"
+              >$1840.00</span
+            >
+          </div>
+          <div class="d-flex align-items-center justify-content-between mb-7">
+            <span class="font-weight-bold text-muted font-size-sm mr-2"
+              >Sub total</span
+            >
+            <span class="font-weight-bolder text-primary text-right"
+              >$5640.00</span
+            >
+          </div>
+          <div class="text-right">
+            <button type="button" class="btn btn-primary text-weight-bold">
+              Place Order
+            </button>
+          </div>
+        </div>
+        <!--end::Purchase-->
+      </div>
+      <!--end::Content-->
+    </div>
+    <!--end::Quick Cart-->
+    <!--begin::Quick Panel-->
+    <div id="kt_quick_panel" class="offcanvas offcanvas-right pt-5 pb-10">
+      <!--begin::Header-->
+      <div
+        class="offcanvas-header offcanvas-header-navs d-flex align-items-center justify-content-between mb-5"
+      >
+        <ul
+          class="nav nav-bold nav-tabs nav-tabs-line nav-tabs-line-3x nav-tabs-primary flex-grow-1 px-10"
+          role="tablist"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              data-toggle="tab"
+              href="#kt_quick_panel_logs"
+              >Audit Logs</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="tab"
+              href="#kt_quick_panel_notifications"
+              >Notifications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              data-toggle="tab"
+              href="#kt_quick_panel_settings"
+              >Settings</a
+            >
+          </li>
+        </ul>
+        <div class="offcanvas-close mt-n1 pr-5">
+          <a
+            href="#"
+            class="btn btn-xs btn-icon btn-light btn-hover-primary"
+            id="kt_quick_panel_close"
+          >
+            <i class="ki ki-close icon-xs text-muted"></i>
+          </a>
+        </div>
+      </div>
+      <!--end::Header-->
+      <!--begin::Content-->
+      <div class="offcanvas-content px-10">
+        <div class="tab-content">
+          <!--begin::Tabpane-->
+          <div
+            class="tab-pane fade show pt-3 pr-5 mr-n5 active"
+            id="kt_quick_panel_logs"
+            role="tabpanel"
+          >
+            <!--begin::Section-->
+            <div class="mb-15">
+              <h5 class="font-weight-bold mb-5">System Messages</h5>
+              <!--begin: Item-->
+              <div class="d-flex align-items-center flex-wrap mb-5">
+                <div class="symbol symbol-50 symbol-light mr-5">
+                  <span class="symbol-label">
+                    <img
+                      src="assets/media/svg/misc/006-plurk.svg"
+                      class="h-50 align-self-center"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-bolder text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >Top Authors</a
+                  >
+                  <span class="text-muted font-weight-bold"
+                    >Most Successful Fellas</span
+                  >
+                </div>
+                <span
+                  class="btn btn-sm btn-light font-weight-bolder py-1 my-lg-0 my-2 text-dark-50"
+                  >+82$</span
+                >
+              </div>
+              <!--end: Item-->
+              <!--begin: Item-->
+              <div class="d-flex align-items-center flex-wrap mb-5">
+                <div class="symbol symbol-50 symbol-light mr-5">
+                  <span class="symbol-label">
+                    <img
+                      src="assets/media/svg/misc/015-telegram.svg"
+                      class="h-50 align-self-center"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-bolder text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >Popular Authors</a
+                  >
+                  <span class="text-muted font-weight-bold"
+                    >Most Successful Fellas</span
+                  >
+                </div>
+                <span
+                  class="btn btn-sm btn-light font-weight-bolder my-lg-0 my-2 py-1 text-dark-50"
+                  >+280$</span
+                >
+              </div>
+              <!--end: Item-->
+              <!--begin: Item-->
+              <div class="d-flex align-items-center flex-wrap mb-5">
+                <div class="symbol symbol-50 symbol-light mr-5">
+                  <span class="symbol-label">
+                    <img
+                      src="assets/media/svg/misc/003-puzzle.svg"
+                      class="h-50 align-self-center"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-bolder text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >New Users</a
+                  >
+                  <span class="text-muted font-weight-bold"
+                    >Most Successful Fellas</span
+                  >
+                </div>
+                <span
+                  class="btn btn-sm btn-light font-weight-bolder my-lg-0 my-2 py-1 text-dark-50"
+                  >+4500$</span
+                >
+              </div>
+              <!--end: Item-->
+              <!--begin: Item-->
+              <div class="d-flex align-items-center flex-wrap mb-5">
+                <div class="symbol symbol-50 symbol-light mr-5">
+                  <span class="symbol-label">
+                    <img
+                      src="assets/media/svg/misc/005-bebo.svg"
+                      class="h-50 align-self-center"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-bolder text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >Active Customers</a
+                  >
+                  <span class="text-muted font-weight-bold"
+                    >Most Successful Fellas</span
+                  >
+                </div>
+                <span
+                  class="btn btn-sm btn-light font-weight-bolder my-lg-0 my-2 py-1 text-dark-50"
+                  >+4500$</span
+                >
+              </div>
+              <!--end: Item-->
+              <!--begin: Item-->
+              <div class="d-flex align-items-center flex-wrap">
+                <div class="symbol symbol-50 symbol-light mr-5">
+                  <span class="symbol-label">
+                    <img
+                      src="assets/media/svg/misc/014-kickstarter.svg"
+                      class="h-50 align-self-center"
+                      alt=""
+                    />
+                  </span>
+                </div>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-bolder text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >Bestseller Theme</a
+                  >
+                  <span class="text-muted font-weight-bold"
+                    >Most Successful Fellas</span
+                  >
+                </div>
+                <span
+                  class="btn btn-sm btn-light font-weight-bolder my-lg-0 my-2 py-1 text-dark-50"
+                  >+4500$</span
+                >
+              </div>
+              <!--end: Item-->
+            </div>
+            <!--end::Section-->
+            <!--begin::Section-->
+            <div class="mb-5">
+              <h5 class="font-weight-bold mb-5">Notifications</h5>
+              <!--begin: Item-->
+              <div
+                class="d-flex align-items-center bg-light-warning rounded p-5 mb-5"
+              >
+                <span class="svg-icon svg-icon-warning mr-5">
+                  <span class="svg-icon svg-icon-lg">
+                    <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Library.svg-->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M5,3 L6,3 C6.55228475,3 7,3.44771525 7,4 L7,20 C7,20.5522847 6.55228475,21 6,21 L5,21 C4.44771525,21 4,20.5522847 4,20 L4,4 C4,3.44771525 4.44771525,3 5,3 Z M10,3 L11,3 C11.5522847,3 12,3.44771525 12,4 L12,20 C12,20.5522847 11.5522847,21 11,21 L10,21 C9.44771525,21 9,20.5522847 9,20 L9,4 C9,3.44771525 9.44771525,3 10,3 Z"
+                          fill="#000000"
+                        />
+                        <rect
+                          fill="#000000"
+                          opacity="0.3"
+                          transform="translate(17.825568, 11.945519) rotate(-19.000000) translate(-17.825568, -11.945519)"
+                          x="16.3255682"
+                          y="2.94551858"
+                          width="3"
+                          height="18"
+                          rx="1"
+                        />
+                      </g>
+                    </svg>
+                    <!--end::Svg Icon-->
+                  </span>
+                </span>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-normal text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >Another purpose persuade</a
+                  >
+                  <span class="text-muted font-size-sm">Due in 2 Days</span>
+                </div>
+                <span class="font-weight-bolder text-warning py-1 font-size-lg"
+                  >+28%</span
+                >
+              </div>
+              <!--end: Item-->
+              <!--begin: Item-->
+              <div
+                class="d-flex align-items-center bg-light-success rounded p-5 mb-5"
+              >
+                <span class="svg-icon svg-icon-success mr-5">
+                  <span class="svg-icon svg-icon-lg">
+                    <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M12.2674799,18.2323597 L12.0084872,5.45852451 C12.0004303,5.06114792 12.1504154,4.6768183 12.4255037,4.38993949 L15.0030167,1.70195304 L17.5910752,4.40093695 C17.8599071,4.6812911 18.0095067,5.05499603 18.0083938,5.44341307 L17.9718262,18.2062508 C17.9694575,19.0329966 17.2985816,19.701953 16.4718324,19.701953 L13.7671717,19.701953 C12.9505952,19.701953 12.2840328,19.0487684 12.2674799,18.2323597 Z"
+                          fill="#000000"
+                          fill-rule="nonzero"
+                          transform="translate(14.701953, 10.701953) rotate(-135.000000) translate(-14.701953, -10.701953)"
+                        />
+                        <path
+                          d="M12.9,2 C13.4522847,2 13.9,2.44771525 13.9,3 C13.9,3.55228475 13.4522847,4 12.9,4 L6,4 C4.8954305,4 4,4.8954305 4,6 L4,18 C4,19.1045695 4.8954305,20 6,20 L18,20 C19.1045695,20 20,19.1045695 20,18 L20,13 C20,12.4477153 20.4477153,12 21,12 C21.5522847,12 22,12.4477153 22,13 L22,18 C22,20.209139 20.209139,22 18,22 L6,22 C3.790861,22 2,20.209139 2,18 L2,6 C2,3.790861 3.790861,2 6,2 L12.9,2 Z"
+                          fill="#000000"
+                          fill-rule="nonzero"
+                          opacity="0.3"
+                        />
+                      </g>
+                    </svg>
+                    <!--end::Svg Icon-->
+                  </span>
+                </span>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-normal text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >Would be to people</a
+                  >
+                  <span class="text-muted font-size-sm">Due in 2 Days</span>
+                </div>
+                <span class="font-weight-bolder text-success py-1 font-size-lg"
+                  >+50%</span
+                >
+              </div>
+              <!--end: Item-->
+              <!--begin: Item-->
+              <div
+                class="d-flex align-items-center bg-light-danger rounded p-5 mb-5"
+              >
+                <span class="svg-icon svg-icon-danger mr-5">
+                  <span class="svg-icon svg-icon-lg">
+                    <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Group-chat.svg-->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z"
+                          fill="#000000"
+                        />
+                        <path
+                          d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z"
+                          fill="#000000"
+                          opacity="0.3"
+                        />
+                      </g>
+                    </svg>
+                    <!--end::Svg Icon-->
+                  </span>
+                </span>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-normel text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >Purpose would be to persuade</a
+                  >
+                  <span class="text-muted font-size-sm">Due in 2 Days</span>
+                </div>
+                <span class="font-weight-bolder text-danger py-1 font-size-lg"
+                  >-27%</span
+                >
+              </div>
+              <!--end: Item-->
+              <!--begin: Item-->
+              <div class="d-flex align-items-center bg-light-info rounded p-5">
+                <span class="svg-icon svg-icon-info mr-5">
+                  <span class="svg-icon svg-icon-lg">
+                    <!--begin::Svg Icon | path:assets/media/svg/icons/General/Attachment2.svg-->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="24px"
+                      height="24px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                    >
+                      <g
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <rect x="0" y="0" width="24" height="24" />
+                        <path
+                          d="M11.7573593,15.2426407 L8.75735931,15.2426407 C8.20507456,15.2426407 7.75735931,15.6903559 7.75735931,16.2426407 C7.75735931,16.7949254 8.20507456,17.2426407 8.75735931,17.2426407 L11.7573593,17.2426407 L11.7573593,18.2426407 C11.7573593,19.3472102 10.8619288,20.2426407 9.75735931,20.2426407 L5.75735931,20.2426407 C4.65278981,20.2426407 3.75735931,19.3472102 3.75735931,18.2426407 L3.75735931,14.2426407 C3.75735931,13.1380712 4.65278981,12.2426407 5.75735931,12.2426407 L9.75735931,12.2426407 C10.8619288,12.2426407 11.7573593,13.1380712 11.7573593,14.2426407 L11.7573593,15.2426407 Z"
+                          fill="#000000"
+                          opacity="0.3"
+                          transform="translate(7.757359, 16.242641) rotate(-45.000000) translate(-7.757359, -16.242641)"
+                        />
+                        <path
+                          d="M12.2426407,8.75735931 L15.2426407,8.75735931 C15.7949254,8.75735931 16.2426407,8.30964406 16.2426407,7.75735931 C16.2426407,7.20507456 15.7949254,6.75735931 15.2426407,6.75735931 L12.2426407,6.75735931 L12.2426407,5.75735931 C12.2426407,4.65278981 13.1380712,3.75735931 14.2426407,3.75735931 L18.2426407,3.75735931 C19.3472102,3.75735931 20.2426407,4.65278981 20.2426407,5.75735931 L20.2426407,9.75735931 C20.2426407,10.8619288 19.3472102,11.7573593 18.2426407,11.7573593 L14.2426407,11.7573593 C13.1380712,11.7573593 12.2426407,10.8619288 12.2426407,9.75735931 L12.2426407,8.75735931 Z"
+                          fill="#000000"
+                          transform="translate(16.242641, 7.757359) rotate(-45.000000) translate(-16.242641, -7.757359)"
+                        />
+                        <path
+                          d="M5.89339828,3.42893219 C6.44568303,3.42893219 6.89339828,3.87664744 6.89339828,4.42893219 L6.89339828,6.42893219 C6.89339828,6.98121694 6.44568303,7.42893219 5.89339828,7.42893219 C5.34111353,7.42893219 4.89339828,6.98121694 4.89339828,6.42893219 L4.89339828,4.42893219 C4.89339828,3.87664744 5.34111353,3.42893219 5.89339828,3.42893219 Z M11.4289322,5.13603897 C11.8194565,5.52656326 11.8194565,6.15972824 11.4289322,6.55025253 L10.0147186,7.96446609 C9.62419433,8.35499039 8.99102936,8.35499039 8.60050506,7.96446609 C8.20998077,7.5739418 8.20998077,6.94077682 8.60050506,6.55025253 L10.0147186,5.13603897 C10.4052429,4.74551468 11.0384079,4.74551468 11.4289322,5.13603897 Z M0.600505063,5.13603897 C0.991029355,4.74551468 1.62419433,4.74551468 2.01471863,5.13603897 L3.42893219,6.55025253 C3.81945648,6.94077682 3.81945648,7.5739418 3.42893219,7.96446609 C3.0384079,8.35499039 2.40524292,8.35499039 2.01471863,7.96446609 L0.600505063,6.55025253 C0.209980772,6.15972824 0.209980772,5.52656326 0.600505063,5.13603897 Z"
+                          fill="#000000"
+                          opacity="0.3"
+                          transform="translate(6.014719, 5.843146) rotate(-45.000000) translate(-6.014719, -5.843146)"
+                        />
+                        <path
+                          d="M17.9142136,15.4497475 C18.4664983,15.4497475 18.9142136,15.8974627 18.9142136,16.4497475 L18.9142136,18.4497475 C18.9142136,19.0020322 18.4664983,19.4497475 17.9142136,19.4497475 C17.3619288,19.4497475 16.9142136,19.0020322 16.9142136,18.4497475 L16.9142136,16.4497475 C16.9142136,15.8974627 17.3619288,15.4497475 17.9142136,15.4497475 Z M23.4497475,17.1568542 C23.8402718,17.5473785 23.8402718,18.1805435 23.4497475,18.5710678 L22.0355339,19.9852814 C21.6450096,20.3758057 21.0118446,20.3758057 20.6213203,19.9852814 C20.2307961,19.5947571 20.2307961,18.9615921 20.6213203,18.5710678 L22.0355339,17.1568542 C22.4260582,16.76633 23.0592232,16.76633 23.4497475,17.1568542 Z M12.6213203,17.1568542 C13.0118446,16.76633 13.6450096,16.76633 14.0355339,17.1568542 L15.4497475,18.5710678 C15.8402718,18.9615921 15.8402718,19.5947571 15.4497475,19.9852814 C15.0592232,20.3758057 14.4260582,20.3758057 14.0355339,19.9852814 L12.6213203,18.5710678 C12.2307961,18.1805435 12.2307961,17.5473785 12.6213203,17.1568542 Z"
+                          fill="#000000"
+                          opacity="0.3"
+                          transform="translate(18.035534, 17.863961) scale(1, -1) rotate(45.000000) translate(-18.035534, -17.863961)"
+                        />
+                      </g>
+                    </svg>
+                    <!--end::Svg Icon-->
+                  </span>
+                </span>
+                <div class="d-flex flex-column flex-grow-1 mr-2">
+                  <a
+                    href="#"
+                    class="font-weight-normel text-dark-75 text-hover-primary font-size-lg mb-1"
+                    >The best product</a
+                  >
+                  <span class="text-muted font-size-sm">Due in 2 Days</span>
+                </div>
+                <span class="font-weight-bolder text-info py-1 font-size-lg"
+                  >+8%</span
+                >
+              </div>
+              <!--end: Item-->
+            </div>
+            <!--end::Section-->
+          </div>
+          <!--end::Tabpane-->
+          <!--begin::Tabpane-->
+          <div
+            class="tab-pane fade pt-2 pr-5 mr-n5"
+            id="kt_quick_panel_notifications"
+            role="tabpanel"
+          >
+            <!--begin::Nav-->
+            <div class="navi navi-icon-circle navi-spacer-x-0">
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon-bell text-success icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      5 new user generated report
+                    </div>
+                    <div class="text-muted">Reports based on sales</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon2-box text-danger icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      2 new items submited
+                    </div>
+                    <div class="text-muted">by Grog John</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon-psd text-primary icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      79 PSD files generated
+                    </div>
+                    <div class="text-muted">Reports based on sales</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon2-supermarket text-warning icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      $2900 worth producucts sold
+                    </div>
+                    <div class="text-muted">Total 234 items</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i
+                        class="flaticon-paper-plane-1 text-success icon-lg"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      4.5h-avarage response time
+                    </div>
+                    <div class="text-muted">Fostest is Barry</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i
+                        class="flaticon-safe-shield-protection text-danger icon-lg"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      3 Defence alerts
+                    </div>
+                    <div class="text-muted">40% less alerts thar last week</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon-notepad text-primary icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      Avarage 4 blog posts per author
+                    </div>
+                    <div class="text-muted">Most posted 12 time</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon-users-1 text-warning icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      16 authors joined last week
+                    </div>
+                    <div class="text-muted">9 photodrapehrs, 7 designer</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon2-box text-info icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      2 new items have been submited
+                    </div>
+                    <div class="text-muted">by Grog John</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon2-download text-success icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      2.8 GB-total downloads size
+                    </div>
+                    <div class="text-muted">Mostly PSD end AL concepts</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon2-supermarket text-danger icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      $2900 worth producucts sold
+                    </div>
+                    <div class="text-muted">Total 234 items</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i class="flaticon-bell text-primary icon-lg"></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      7 new user generated report
+                    </div>
+                    <div class="text-muted">Reports based on sales</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+              <!--begin::Item-->
+              <a href="#" class="navi-item">
+                <div class="navi-link rounded">
+                  <div class="symbol symbol-50 mr-3">
+                    <div class="symbol-label">
+                      <i
+                        class="flaticon-paper-plane-1 text-success icon-lg"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="navi-text">
+                    <div class="font-weight-bold font-size-lg">
+                      4.5h-avarage response time
+                    </div>
+                    <div class="text-muted">Fostest is Barry</div>
+                  </div>
+                </div>
+              </a>
+              <!--end::Item-->
+            </div>
+            <!--end::Nav-->
+          </div>
+          <!--end::Tabpane-->
+          <!--begin::Tabpane-->
+          <div
+            class="tab-pane fade pt-3 pr-5 mr-n5"
+            id="kt_quick_panel_settings"
+            role="tabpanel"
+          >
+            <form class="form">
+              <!--begin::Section-->
+              <div>
+                <h5 class="font-weight-bold mb-3">Customer Care</h5>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label"
+                    >Enable Notifications:</label
+                  >
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-success switch-sm">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name="select"
+                        />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label"
+                    >Enable Case Tracking:</label
+                  >
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-success switch-sm">
+                      <label>
+                        <input
+                          type="checkbox"
+                          name="quick_panel_notifications_2"
+                        />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label">Support Portal:</label>
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-success switch-sm">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name="select"
+                        />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!--end::Section-->
+              <div class="separator separator-dashed my-6"></div>
+              <!--begin::Section-->
+              <div class="pt-2">
+                <h5 class="font-weight-bold mb-3">Reports</h5>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label">Generate Reports:</label>
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-sm switch-danger">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name="select"
+                        />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label"
+                    >Enable Report Export:</label
+                  >
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-sm switch-danger">
+                      <label>
+                        <input type="checkbox" name="select" />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label"
+                    >Allow Data Collection:</label
+                  >
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-sm switch-danger">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name="select"
+                        />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!--end::Section-->
+              <div class="separator separator-dashed my-6"></div>
+              <!--begin::Section-->
+              <div class="pt-2">
+                <h5 class="font-weight-bold mb-3">Memebers</h5>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label"
+                    >Enable Member singup:</label
+                  >
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-sm switch-primary">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name="select"
+                        />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label"
+                    >Allow User Feedbacks:</label
+                  >
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-sm switch-primary">
+                      <label>
+                        <input type="checkbox" name="select" />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group mb-0 row align-items-center">
+                  <label class="col-8 col-form-label"
+                    >Enable Customer Portal:</label
+                  >
+                  <div class="col-4 d-flex justify-content-end">
+                    <span class="switch switch-sm switch-primary">
+                      <label>
+                        <input
+                          type="checkbox"
+                          checked="checked"
+                          name="select"
+                        />
+                        <span></span>
+                      </label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!--end::Section-->
+            </form>
+          </div>
+          <!--end::Tabpane-->
+        </div>
+      </div>
+      <!--end::Content-->
+    </div>
+    <!--end::Quick Panel-->
+    <!--begin::Chat Panel-->
+    <div
+      class="modal modal-sticky modal-sticky-bottom-right"
+      id="kt_chat_modal"
+      role="dialog"
+      data-backdrop="false"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!--begin::Card-->
+          <div class="card card-custom">
+            <!--begin::Header-->
+            <div class="card-header align-items-center px-4 py-3">
+              <div class="text-left flex-grow-1">
+                <!--begin::Dropdown Menu-->
+                <div class="dropdown dropdown-inline">
+                  <button
+                    type="button"
+                    class="btn btn-clean btn-sm btn-icon btn-icon-md"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <span class="svg-icon svg-icon-lg">
+                      <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Add-user.svg-->
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        version="1.1"
+                      >
+                        <g
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <polygon points="0 0 24 0 24 24 0 24" />
+                          <path
+                            d="M18,8 L16,8 C15.4477153,8 15,7.55228475 15,7 C15,6.44771525 15.4477153,6 16,6 L18,6 L18,4 C18,3.44771525 18.4477153,3 19,3 C19.5522847,3 20,3.44771525 20,4 L20,6 L22,6 C22.5522847,6 23,6.44771525 23,7 C23,7.55228475 22.5522847,8 22,8 L20,8 L20,10 C20,10.5522847 19.5522847,11 19,11 C18.4477153,11 18,10.5522847 18,10 L18,8 Z M9,11 C6.790861,11 5,9.209139 5,7 C5,4.790861 6.790861,3 9,3 C11.209139,3 13,4.790861 13,7 C13,9.209139 11.209139,11 9,11 Z"
+                            fill="#000000"
+                            fill-rule="nonzero"
+                            opacity="0.3"
+                          />
+                          <path
+                            d="M0.00065168429,20.1992055 C0.388258525,15.4265159 4.26191235,13 8.98334134,13 C13.7712164,13 17.7048837,15.2931929 17.9979143,20.2 C18.0095879,20.3954741 17.9979143,21 17.2466999,21 C13.541124,21 8.03472472,21 0.727502227,21 C0.476712155,21 -0.0204617505,20.45918 0.00065168429,20.1992055 Z"
+                            fill="#000000"
+                            fill-rule="nonzero"
+                          />
+                        </g>
+                      </svg>
+                      <!--end::Svg Icon-->
+                    </span>
+                  </button>
+                  <div
+                    class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-md"
+                  >
+                    <!--begin::Navigation-->
+                    <ul class="navi navi-hover py-5">
+                      <li class="navi-item">
+                        <a href="#" class="navi-link">
+                          <span class="navi-icon">
+                            <i class="flaticon2-drop"></i>
+                          </span>
+                          <span class="navi-text">New Group</span>
+                        </a>
+                      </li>
+                      <li class="navi-item">
+                        <a href="#" class="navi-link">
+                          <span class="navi-icon">
+                            <i class="flaticon2-list-3"></i>
+                          </span>
+                          <span class="navi-text">Contacts</span>
+                        </a>
+                      </li>
+                      <li class="navi-item">
+                        <a href="#" class="navi-link">
+                          <span class="navi-icon">
+                            <i class="flaticon2-rocket-1"></i>
+                          </span>
+                          <span class="navi-text">Groups</span>
+                          <span class="navi-link-badge">
+                            <span
+                              class="label label-light-primary label-inline font-weight-bold"
+                              >new</span
+                            >
+                          </span>
+                        </a>
+                      </li>
+                      <li class="navi-item">
+                        <a href="#" class="navi-link">
+                          <span class="navi-icon">
+                            <i class="flaticon2-bell-2"></i>
+                          </span>
+                          <span class="navi-text">Calls</span>
+                        </a>
+                      </li>
+                      <li class="navi-item">
+                        <a href="#" class="navi-link">
+                          <span class="navi-icon">
+                            <i class="flaticon2-gear"></i>
+                          </span>
+                          <span class="navi-text">Settings</span>
+                        </a>
+                      </li>
+                      <li class="navi-separator my-3"></li>
+                      <li class="navi-item">
+                        <a href="#" class="navi-link">
+                          <span class="navi-icon">
+                            <i class="flaticon2-magnifier-tool"></i>
+                          </span>
+                          <span class="navi-text">Help</span>
+                        </a>
+                      </li>
+                      <li class="navi-item">
+                        <a href="#" class="navi-link">
+                          <span class="navi-icon">
+                            <i class="flaticon2-bell-2"></i>
+                          </span>
+                          <span class="navi-text">Privacy</span>
+                          <span class="navi-link-badge">
+                            <span
+                              class="label label-light-danger label-rounded font-weight-bold"
+                              >5</span
+                            >
+                          </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <!--end::Navigation-->
+                  </div>
+                </div>
+                <!--end::Dropdown Menu-->
+              </div>
+              <div class="text-center flex-grow-1">
+                <div class="text-dark-75 font-weight-bold font-size-h5">
+                  Matt Pears
+                </div>
+                <div>
+                  <span class="label label-dot label-success"></span>
+                  <span class="font-weight-bold text-muted font-size-sm"
+                    >Active</span
+                  >
+                </div>
+              </div>
+              <div class="text-right flex-grow-1">
+                <button
+                  type="button"
+                  class="btn btn-clean btn-sm btn-icon btn-icon-md"
+                  data-dismiss="modal"
+                >
+                  <i class="ki ki-close icon-1x"></i>
+                </button>
+              </div>
+            </div>
+            <!--end::Header-->
+            <!--begin::Body-->
+            <!--begin::Footer-->
+            <div class="card-footer align-items-center">
+              <!--begin::Compose-->
+              <textarea
+                class="form-control border-0 p-0"
+                rows="2"
+                placeholder="Type a message"
+              ></textarea>
+              <div
+                class="d-flex align-items-center justify-content-between mt-5"
+              >
+                <div class="mr-3">
+                  <a href="#" class="btn btn-clean btn-icon btn-md mr-1">
+                    <i class="flaticon2-photograph icon-lg"></i>
+                  </a>
+                  <a href="#" class="btn btn-clean btn-icon btn-md">
+                    <i class="flaticon2-photo-camera icon-lg"></i>
+                  </a>
+                </div>
+                <div>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-md text-uppercase font-weight-bold chat-send py-2 px-6"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+              <!--begin::Compose-->
+            </div>
+            <!--end::Footer-->
+          </div>
+          <!--end::Card-->
+        </div>
+      </div>
+    </div>
+    <!--end::Chat Panel-->
+    <script>
+      var HOST_URL = "https://keenthemes.com/metronic/tools/preview";
+    </script>
+    <!--begin::Global Config(global config for global JS scripts)-->
+    <script>
+      var KTAppSettings = {
+        breakpoints: { sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1400 },
+        colors: {
+          theme: {
+            base: {
+              white: "#ffffff",
+              primary: "#3699FF",
+              secondary: "#E5EAEE",
+              success: "#1BC5BD",
+              info: "#8950FC",
+              warning: "#FFA800",
+              danger: "#F64E60",
+              light: "#E4E6EF",
+              dark: "#181C32",
+            },
+            light: {
+              white: "#ffffff",
+              primary: "#E1F0FF",
+              secondary: "#EBEDF3",
+              success: "#C9F7F5",
+              info: "#EEE5FF",
+              warning: "#FFF4DE",
+              danger: "#FFE2E5",
+              light: "#F3F6F9",
+              dark: "#D6D6E0",
+            },
+            inverse: {
+              white: "#ffffff",
+              primary: "#ffffff",
+              secondary: "#3F4254",
+              success: "#ffffff",
+              info: "#ffffff",
+              warning: "#ffffff",
+              danger: "#ffffff",
+              light: "#464E5F",
+              dark: "#ffffff",
+            },
+          },
+          gray: {
+            "gray-100": "#F3F6F9",
+            "gray-200": "#EBEDF3",
+            "gray-300": "#E4E6EF",
+            "gray-400": "#D1D3E0",
+            "gray-500": "#B5B5C3",
+            "gray-600": "#7E8299",
+            "gray-700": "#5E6278",
+            "gray-800": "#3F4254",
+            "gray-900": "#181C32",
+          },
+        },
+        "font-family": "Poppins",
+      };
+    </script>
+    <!--end::Global Config-->
+    <!--begin::Global Theme Bundle(used by all pages)-->
+    <script src="assets/plugins/global/plugins.bundle.js?v=7.0.5"></script>
+    <script src="assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.5"></script>
+    <script src="assets/js/scripts.bundle.js?v=7.0.5"></script>
+    <!--end::Global Theme Bundle-->
+    <!--begin::Page Vendors(used by this page)-->
+    <script src="assets/plugins/custom/datatables/datatables.bundle.js?v=7.0.5"></script>
+    <!--end::Page Vendors-->
+    <!--begin::Page Scripts(used by this page)-->
+    <script src="assets/js/pages/crud/datatables/basic/orders.js?v=7.0.5"></script>
+    <!-- <script src="assets/js/pages/crud/datatables/basic/orders2.js?v=7.0.5"></script> -->
+    <!--end::Page Scripts-->
+  </body>
+  <!--end::Body-->
+</html>
